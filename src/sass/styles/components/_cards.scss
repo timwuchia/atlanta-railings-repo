@@ -1,0 +1,50 @@
+.overlay-cards {
+    .card-body {
+        bottom: -6.875rem;
+        transition: bottom 0.5s ease-in-out;
+        .wp-block-heading {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            &::after {
+                content: "\f078";
+                font: var(--fa-font-regular);
+                transition: transform 0.5s ease-in-out;
+            }
+        }
+    }
+    .card-content:hover {
+        .card-body {
+            bottom: 0;
+            .wp-block-heading {
+                &::after {
+                    transform: rotateZ(180deg);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .overlay-cards {
+        .card-body {
+            bottom: -10.3125rem;
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .overlay-cards {
+        .card-body {
+            bottom: -9.125rem;
+        }
+    }
+}
+
+@media screen and (min-width:1140px) {
+    .overlay-cards {
+        .card-body {
+            bottom: -7.125rem;
+        }
+    }
+}

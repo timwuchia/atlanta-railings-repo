@@ -1,0 +1,224 @@
+.wp-site-blocks {
+    .wp-block-columns.is-not-stacked-on-mobile>.wp-block-column.header-desktop-contact {
+        flex-basis: unset;
+        flex-grow: unset;
+        align-items: center;
+    }
+    .site-header {
+        z-index: 500;
+        position: sticky;
+        top: 0;
+        max-width: 100vw;
+        background-color: #fff;
+
+        .header-main {
+            padding: 1rem 1.25rem;
+            gap: 0;
+            display: flex;
+
+            .logo-column {
+                flex: 2 0 auto;
+
+                .wp-block-site-logo {
+                    img {
+                        width: calc(210rem / 16);
+                    }
+                }
+            }
+
+            .nav-column {
+                flex: 1 1 auto;
+                align-content: center;
+                justify-content: flex-end;
+
+                
+
+                .wp-block-navigation__responsive-container {
+                    a {
+                        color: $primary;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wp-site-blocks {
+        .site-header {
+            .header-main {
+                background-color: #fff;
+                .logo-column {
+                    flex: 1 1 auto;
+
+                    .wp-block-site-logo {
+                        img {
+                            width: calc(100rem / 16);
+                        }
+                    }
+
+                    .nav-column {
+                        flex: 2 1 auto;
+                        justify-content: flex-start;
+                    }
+                }
+                li {
+                    &.wp-block-navigation-item  {
+                        margin-bottom: 0;
+                        a {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .wp-site-blocks {
+        .site-header {
+            .header-main {
+                .nav-column {
+                    justify-content: flex-end !important;
+                }
+                .logo-column {
+                    flex: unset;
+                    .wp-block-site-logo {
+                        img {
+                            width: calc(250rem / 16);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Site Utility w/ Nav
+.wp-site-blocks {
+    .site-header {
+        .header-utility {
+            max-width: 100vw;
+            padding: 1rem 1.25rem;
+            a {
+                color: var(--wp--preset--color--black) !important;
+                &:hover {
+                    color: var(--wp--preset--color--white) !important;
+                }
+            }
+            .utility-nav-column {
+                display: flex;
+                flex: 2 1 auto;
+                nav.utility-nav {
+                    ul.utility-nav {
+                        justify-content: flex-start;
+                        align-items: center;
+                        flex-wrap: nowrap;
+                        column-gap: 2rem;
+                    }
+                }
+            }
+            .utility-contact-column {
+                flex: 1 1 auto;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 1rem;
+                .wp-block-columns {
+                    align-items: center;
+                    &:hover {
+                        a, i {
+                            color: var(--wp--preset--color--white) !important;
+                        }
+                        
+                    }
+                    .link-column {
+                        display: none;
+                    }
+                    
+                    .icon-column {
+                        align-items: center;
+                        .wp-block-lg-blocks-font-awesome {
+                            font-size: 1.25rem;
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-content: center;
+                            a {
+                                display: flex;
+                                text-decoration: none;
+                                i {
+                                    line-height: 1.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.no-nav { // No Utility Nav Variant
+                .utility-nav-column {
+                    display: none;
+                }
+                .utility-contact-column {
+                    justify-content: space-between;
+                    .wp-block-columns {
+                        gap: 1rem;
+                        
+                        .icon-column {
+                            flex: 1 1 auto;
+                        }
+                        .link-column {
+                            flex: 1 1 auto;
+                            display: flex;
+                            p {
+                                margin: 0;
+                            }
+                            a {
+                                color: var(--wp--preset--color--black);
+                                white-space: pre;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .wp-site-blocks {
+        .site-header {
+            .header-utility {
+                .utility-contact-column {
+                    .wp-block-columns {
+                        gap: 0.5rem;
+                        flex-wrap: nowrap !important;
+                        .icon-column {
+                            flex: 1 1 auto;
+                        }
+                        .link-column {
+                            flex: 1 1 auto;
+                            display: flex;
+                            p {
+                                margin: 0;
+                            }
+                            a {
+                                color: var(--wp--preset--color--black);
+                                white-space: pre;
+                            }
+                        }
+                    }
+                }
+                &.no-nav {
+                    .utility-contact-column {
+                        gap: 4rem;
+                        justify-content: flex-end;
+                    }
+                }
+            }
+        }
+    }
+}

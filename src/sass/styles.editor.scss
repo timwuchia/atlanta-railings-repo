@@ -1,0 +1,64 @@
+/**
+The css in this file is only for backend editor.
+This will be used to match the fonts, sizes etc in backend editor with the frontend
+*/
+
+/*body {
+  background: #ddd;
+}*/
+// Site Utility w/ Nav
+
+.header-utility {
+    .utility-contact-column {
+        display: flex;
+        flex-wrap: nowrap;
+        flex: 1 1 auto !important;
+
+        .wp-block-columns {
+            flex: 1 1 auto;
+            margin-top: 0;
+
+            .icon-column {
+                .wp-block-lg-blocks-font-awesome {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    svg {
+                        max-width: 1.5rem;
+                    }
+                }
+            }
+
+            .link-column {
+                a {
+                    color: var(--wp--preset--color--black);
+                }
+            }
+        }
+    }
+}
+
+.footer-main {
+    .link-column {
+        a {
+            color: var(--wp--preset--color--black);
+        }
+    }
+}
+.footer-legal {
+    margin-top: 0;
+    a {
+        color: var(--wp--preset--color--black);
+        text-decoration: underline;
+    }
+}
+
+.icon-column {
+    .wp-block-lg-blocks-font-awesome {
+        display: flex;
+        justify-content: flex-end;
+        svg {
+            max-width: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+.home-slider {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    
+    .swiper-wrapper {
+        .swiper-slide {
+            position: relative;
+            min-height: 80vh;
+            max-height: 80vh;
+            .swiper-slide__image {
+                
+                img {
+                    min-height: 80vh;
+                    max-height: 80vh;
+                    object-fit: cover;
+                }
+            }
+            .swiper-slide__content {
+                position: absolute;
+                padding: 2rem;
+                background-color: #9090908C;
+                margin-top: 1rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+    .swiper-button-prev, .swiper-button-next {
+        top: unset;
+        bottom: 1rem;
+        pointer-events: all !important;
+        font-size: 1.5rem;
+    }
+    .swiper-button-prev {
+        left: 35%;
+        z-index: 50;
+    }
+    .swiper-button-next {
+        right: 35%;
+        left: unset;
+        z-index: 50;
+    }
+    .swiper-pagination {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 1rem;
+        height: 1.5rem;
+        align-items: center;
+        .swiper-pagination-bullet {
+            width: 0.75rem;
+            height: 0.75rem;
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .home-slider {
+        .swiper-wrapper {
+            .swiper-slide {
+                min-height: unset;
+                .swiper-slide__image {
+                    img {
+                        min-height: unset;
+                    }
+                }
+                .swiper-slide__content {
+                    max-width: 28.375rem;
+                }
+            }
+        }
+        .swiper-button-prev {
+            left: 42.5%;
+        }
+        .swiper-button-next {
+            right: 42.5%;
+
+        }
+    
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .home-slider {
+        .swiper-button-prev {
+            left: 45%;
+        }
+        .swiper-button-next {
+            right: 45%;
+
+        }
+    
+    }
+}
+
+
+@media screen and (min-width: 1920px) {
+    .home-slider {
+        .swiper-button-prev {
+            left: 46.5%;
+        }
+        .swiper-button-next {
+            right: 46.5%;
+
+        }
+    
+    }
+}

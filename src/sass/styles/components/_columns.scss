@@ -1,0 +1,31 @@
+.img-text {
+    .image {
+        order: 1;
+    }
+    .text {
+        order: 2;
+        align-content: center;
+    }
+}
+
+@media screen and (min-width:768px){
+    .img-text {
+        flex-wrap: nowrap !important;
+        .image {
+            order: unset;
+            flex: 1 1 30% !important;
+        }
+        .text {
+            order: unset;
+            flex: 1 1 70% !important;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .img-text {
+        .image, .text {
+            flex: 1 1 50% !important;
+        }
+    }
+}

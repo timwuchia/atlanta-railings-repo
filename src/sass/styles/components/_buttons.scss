@@ -1,0 +1,16 @@
+.wp-block-buttons {
+    gap: 1rem;
+}
+.wp-block-button {
+    font-size: 1rem;
+    .wp-block-button__link.has-primary-background-color  {
+        &:hover {
+            background-color: var(--wp--preset--color--secondary) !important;
+        }
+    }
+    .wp-block-button__link.has-secondary-background-color  {
+        &:hover {
+            background-color: var(--wp--preset--color--primary) !important;
+        }
+    }
+}
