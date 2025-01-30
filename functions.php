@@ -3,6 +3,7 @@
 	$function_dir_path = get_stylesheet_directory();
 	$function_file_path = [
 		'/libs/enqueue_styles_scripts.php',
+		'/libs/cpt.php',
 		'/libs/core_tweaks.php',
 		'/blocks/function.php'
 	];
