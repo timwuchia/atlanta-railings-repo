@@ -1,16 +1,32 @@
-$tablet: 1024px;
-$desktop: 1200px;
-$primary: #1C2D72;
-$secondary: #313131;
-$tertiary: #DBDBDB;
-$fontWeight: 400;
-$fontWeightBold: 700;
-
 %clear-horizontal-spacing {
     @media (max-width: $desktop){
         margin-left: calc(var(--full-width-padding)* -1) !important;
         margin-right: calc(var(--full-width-padding)* -1) !important;
     }
+}
+
+.wp-block-button.is-style-outline {
+    .has-primary-color {
+        &:hover {
+            background-color: $primary;
+            border-color: $primary;
+            color: #fff !important;
+        }
+    }
+}
+
+.is-layout-constrained > .alignwide {
+    &.shrink {
+        &__below_desktop {
+            @media (max-width: $desktop){
+                max-width: var(--wp--style--global--content-size);
+            }
+        }
+    }
+}
+
+.mw-600 {
+    max-width: 600px !important;
 }
 
 figure {
@@ -181,6 +197,7 @@ html {
 }
 
 .video-banner-content {
+    max-width: 458px;
     padding: 3rem;
     background-color: rgba(#fff, 0.7);
 }
@@ -188,6 +205,9 @@ html {
 .contained-banner {
     // padding-left: 2rem;
     // padding-right: 2rem;
+    &.wp-block-cover {
+        min-height: 220px;
+    }
     
     .wp-block-cover__inner-container {
         display: flex;
@@ -247,9 +267,12 @@ body:not(.block-editor-page){
       
         .card-content {
           text-align: center;
-          background-color: $secondary;
-          color: #fff;
-        //   padding: 0 60px 50px;
+          background-color: $tertiary;
+          color: $secondary;
+          @media screen and (min-width: $desktop){
+            color: #fff;
+            background-color: $secondary;
+          }
           position: absolute;
           bottom: 0;
           left: 0;
@@ -381,26 +404,38 @@ h3.get-a-quote {
         img {
             min-height: 400px;
         }
+        // .swiper-wrapper {
+        //     height: 400px !important;
+        // }
         .main {
             .swiper-button-prev {
                 // right: 3rem;
                 padding: 1rem;
                 border-radius: 50%;
                 color: white !important;
+                @media screen and (min-width: $tablet){
+                    &::after {
+                        font-size: 4rem;
+                    }
+                }
                 &::after {
                     content: '\f137';
-                    font-size: 4rem;
+                    font-size: 2rem;
                 }
             }
             .swiper-button-next {
-                right: 2rem;
+                right: 0;
                 padding: 1rem;
                 border-radius: 50%;
                 color: white !important;
-        
+                @media screen and (min-width: $tablet){
+                    &::after {
+                        font-size: 4rem;
+                    }
+                }
                 &::after {
                     content: '\f138';
-                    font-size: 4rem;
+                    font-size: 2rem;
                 }
             }
         }

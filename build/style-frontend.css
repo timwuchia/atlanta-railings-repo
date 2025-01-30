@@ -3,17 +3,24 @@
   \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 html {
   font-family: "Barlow", serif;
+  color: #313131;
 }
 
 h1,
 .h1 {
-  font-weight: 500;
+  font-weight: 700;
   margin: 0;
   margin-bottom: 1.25rem;
-  font-size: 1.875rem;
+  font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 700;
   font-family: "Barlow", serif;
+}
+@media screen and (min-width: 1200px) {
+  h1,
+  .h1 {
+    font-size: 3rem;
+  }
 }
 
 h2,
@@ -21,10 +28,17 @@ h2,
   font-weight: 500;
   margin: 0;
   margin-bottom: 1.25rem;
-  font-size: 1.5rem;
+  font-size: 1.875rem;
   line-height: 2rem;
   font-weight: 700;
   font-family: "Barlow", serif;
+  color: #313131;
+}
+@media screen and (min-width: 1200px) {
+  h2,
+  .h2 {
+    font-size: 2.25rem;
+  }
 }
 
 h3,
@@ -32,7 +46,7 @@ h3,
   font-weight: 500;
   margin: 0;
   margin-bottom: 1.25rem;
-  font-size: 1.3125rem;
+  font-size: 1.5rem;
   line-height: 1.75rem;
   font-weight: 700;
   font-family: "Barlow", serif;
@@ -40,7 +54,29 @@ h3,
 
 h4,
 .h4 {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.125rem;
+  margin-top: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  font-family: "Barlow", serif;
+}
+
+h5,
+.h5 {
+  font-size: 1.3125rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.125rem;
+  margin-top: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  font-family: "Barlow", serif;
+}
+
+h6,
+.h6 {
+  font-size: 1.3125rem;
   line-height: 1.75rem;
   margin-bottom: 1.125rem;
   margin-top: 1.125rem;
@@ -204,6 +240,22 @@ ul li {
   }
 }
 
+.wp-block-button.is-style-outline .has-primary-color:hover {
+  background-color: #1C2D72;
+  border-color: #1C2D72;
+  color: #fff !important;
+}
+
+@media (max-width: 1200px) {
+  .is-layout-constrained > .alignwide.shrink__below_desktop {
+    max-width: var(--wp--style--global--content-size);
+  }
+}
+
+.mw-600 {
+  max-width: 600px !important;
+}
+
 figure {
   margin-bottom: 0;
 }
@@ -356,10 +408,14 @@ html body {
 }
 
 .video-banner-content {
+  max-width: 458px;
   padding: 3rem;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
+.contained-banner.wp-block-cover {
+  min-height: 220px;
+}
 .contained-banner .wp-block-cover__inner-container {
   display: flex;
   flex-direction: column;
@@ -405,8 +461,8 @@ body:not(.block-editor-page) .card-hover:hover a {
 }
 body:not(.block-editor-page) .card-hover .card-content {
   text-align: center;
-  background-color: #313131;
-  color: #fff;
+  background-color: #DBDBDB;
+  color: #313131;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -414,6 +470,12 @@ body:not(.block-editor-page) .card-hover .card-content {
   transition: all 0.35s 0.35s cubic-bezier(0.1, 0.72, 0.4, 0.97);
   will-change: bottom, background-color, transform;
   z-index: 1;
+}
+@media screen and (min-width: 1200px) {
+  body:not(.block-editor-page) .card-hover .card-content {
+    color: #fff;
+    background-color: #313131;
+  }
 }
 body:not(.block-editor-page) .card-hover .card-content::before, body:not(.block-editor-page) .card-hover .card-content::after {
   content: "";
@@ -529,19 +591,29 @@ h3.get-a-quote a {
   border-radius: 50%;
   color: white !important;
 }
+@media screen and (min-width: 1024px) {
+  .image-slider .wp-block-lg-blocks-advanced-slider .main .swiper-button-prev::after {
+    font-size: 4rem;
+  }
+}
 .image-slider .wp-block-lg-blocks-advanced-slider .main .swiper-button-prev::after {
   content: "\f137";
-  font-size: 4rem;
+  font-size: 2rem;
 }
 .image-slider .wp-block-lg-blocks-advanced-slider .main .swiper-button-next {
-  right: 2rem;
+  right: 0;
   padding: 1rem;
   border-radius: 50%;
   color: white !important;
 }
+@media screen and (min-width: 1024px) {
+  .image-slider .wp-block-lg-blocks-advanced-slider .main .swiper-button-next::after {
+    font-size: 4rem;
+  }
+}
 .image-slider .wp-block-lg-blocks-advanced-slider .main .swiper-button-next::after {
   content: "\f138";
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .wp-block-lg-blocks-accordion > .accordion-container {

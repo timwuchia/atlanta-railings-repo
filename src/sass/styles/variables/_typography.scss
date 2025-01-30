@@ -1,13 +1,18 @@
 html {
   font-family: "Barlow", serif;
+  color: $secondary;
 }
 
 h1,
 .h1 {
-    font-weight: 500;
+    font-weight: 700;
     margin: 0;
     margin-bottom: 1.25rem;
-    font-size: 1.875rem;
+    font-size: 2.25rem;
+    @media screen and (min-width: $desktop){
+      font-size: 3rem;
+    }
+    
     line-height: 2.5rem;
     font-weight: 700;
     font-family: "Barlow", serif;
@@ -18,10 +23,14 @@ h2,
     font-weight: 500;
     margin: 0;
     margin-bottom: 1.25rem;
-    font-size: 1.5rem;
+    font-size: 1.875rem;
+    @media screen and (min-width: $desktop){
+      font-size: 2.25rem;
+    }
     line-height: 2rem;
     font-weight: 700;
     font-family: "Barlow", serif;
+    color: $secondary;
 }
 
 h3,
@@ -29,7 +38,7 @@ h3,
     font-weight: 500;
     margin: 0;
     margin-bottom: 1.25rem;
-    font-size: 1.3125rem;
+    font-size: 1.5rem;
     line-height: 1.75rem;
     font-weight: 700;
     font-family: "Barlow", serif;
@@ -37,7 +46,29 @@ h3,
 
 h4,
 .h4 {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    margin-bottom: 1.125rem;
+    margin-top: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-family: "Barlow", serif;
+}
+
+h5,
+.h5 {
+    font-size: 1.3125rem;
+    line-height: 1.75rem;
+    margin-bottom: 1.125rem;
+    margin-top: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-family: "Barlow", serif;
+}
+
+h6,
+.h6 {
+    font-size: 1.3125rem;
     line-height: 1.75rem;
     margin-bottom: 1.125rem;
     margin-top: 1.125rem;

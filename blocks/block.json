@@ -1,0 +1,16 @@
+{
+    "apiVersion": 2,
+    "name": "custom/star-block",
+    "title": "Star Rating",
+    "category": "design",
+    "icon": "star-filled",
+    "description": "A block that displays five Font Awesome stars.",
+    "keywords": ["star", "rating", "font awesome"],
+    "supports": {
+      "html": false
+    },
+    "editorScript": "file:index.js",
+    "editorStyle": "file:editor.css",
+    "style": "file:style.css"
+  }
+  
