@@ -71,20 +71,20 @@
 	}
 
 	$(document).ready(function () {
-		if (window.screen.availWidth < 1200) {
+		if (window.screen.availWidth < 1440) {
 			$('.wp-block-navigation-item.has-child')
 				.children('ul')
 				.slideToggle();
 		}
 
-		if (window.screen.availWidth < 1200) {
+		if (window.screen.availWidth < 1440) {
 			$('.wp-block-navigation-item.has-child').on(
 				'click',
 				mobileMenuHandling
 			);
 		}
 
-		if (window.screen.availWidth > 1199) {
+		if (window.screen.availWidth > 1440) {
 			$('.wp-block-navigation-item.has-child').on(
 				'mouseenter',
 				desktopMenuHover
@@ -94,17 +94,17 @@
 	$(window).on('resize', function () {
 		$('.wp-block-navigation-item.has-child').off('mouseenter');
 		$('.wp-block-navigation-item.has-child').off('click');
-		if (window.screen.availWidth < 1200) {
+		if (window.screen.availWidth < 1440) {
 			$('.wp-block-navigation-item.has-child').children('ul').slideUp();
 		}
 
-		if (window.screen.availWidth < 1200) {
+		if (window.screen.availWidth < 1440) {
 			$('.wp-block-navigation-item.has-child').on(
 				'click',
 				mobileMenuHandling
 			);
 		}
-		if (window.screen.availWidth > 1199) {
+		if (window.screen.availWidth > 1439) {
 			$('.wp-block-navigation-item.has-child').children('ul').slideDown();
 			$('.wp-block-navigation__responsive-container-close').click();
 			$('.wp-block-navigation-item.has-child').off('mouseenter');

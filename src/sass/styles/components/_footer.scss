@@ -1,4 +1,9 @@
 .site-footer {
+    font: normal normal 600 16px/19px Barlow Semi Condensed;
+    a {
+        font: var(--unnamed-font-style-normal) normal 700 16px/19px Barlow Semi Condensed;
+        font-family: 'Barlow';
+    }
     .lg-social-media {
         display: flex;
         list-style: none;
@@ -7,6 +12,27 @@
         li {
             &:not(:last-child){
                 margin-right: 1rem;
+            }
+        }
+    }
+
+    .footer-title {
+        margin-top: 0;
+    }
+
+    .footer-nav-section {
+        flex-direction: column;
+        @media screen and (min-width: $desktop){
+            flex-direction: row;
+        }
+    }
+    .more-info-column, .product-column {
+        ul {
+            list-style: none;
+            padding-left: 0;
+            a {
+                text-decoration: none;
+                display: block;
             }
         }
     }
@@ -20,56 +46,42 @@
             flex-basis: unset;
         }
 
-        .wp-block-column.footer-logo {
+        > .wp-block-column:first-child {
             flex: 0 0 40%;
             img {
                 width: 150px;
             }
- 
-            > p { // weird additional p tag
-                display: none;
-            }
         }
 
-        .footer-contact {
-            flex: 0 0 20%;
-            p {
-                margin-top: 0;
+        > .wp-block-column:nth-child(2) {
+            @media screen and (min-width: $tablet){
+                flex: 0 0 30%;
             }
-            align-items: flex-start;
-            nav {
-                ul {
-                    flex-direction: column;
-                    align-items: flex-start;
-                }
+            @media screen and (min-width: $tablet){
+                flex: 0 0 40%;
             }
+            flex: 0 0 40%;
         }
 
-        .footer-social {
-            flex: 0 0 20%;
-            align-items: flex-start;
-            flex-direction: column;
-            p {
-                margin-top: 0;
+        > .wp-block-column:last-child {
+            @media screen and (min-width: $tablet){
+                flex: 0 0 30%;
             }
-            ul {
-                list-style: none;
-                margin-top: 0;
-                padding-left: 0;
+            @media screen and (min-width: $tablet){
+                flex: 0 0 20%;
             }
-        }
-
-        > div:last-child {
-            flex: 0 0 20%;
         }
 
         a {
             &:not(.has-text-color){
-                color: var(--wp--preset--color--white) !important;
+                color: $tertiary !important;
+                
                 text-decoration: none;
+                transition: color 0.3s ease;
     
                 &:hover {
-                    color: var(--wp--preset--color--primary) !important;
+                    color: var(--wp--preset--color--white) !important;
+                    text-decoration: underline;
                 }
             }
         }

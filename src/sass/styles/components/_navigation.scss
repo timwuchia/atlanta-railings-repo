@@ -14,6 +14,9 @@ nav.main-nav {
         box-sizing: border-box;
         max-width: 100vw;
         padding: 1rem;
+        .wp-block-navigation__submenu-icon {
+            color: $primary;
+        }
         div.wp-block-navigation__responsive-close { // not sure what this container div is for.
             div.wp-block-navigation__responsive-dialog { // another container div. 
                 margin-top: 0;
@@ -22,10 +25,9 @@ nav.main-nav {
                         display: none; // Hide default 'X' Icon
                     }
                     &::after {   // Use FA X Icon instead
-                        // content: "\e59b";
-                        // font: var(--fa-font-solid);
-                        // font-size: 3rem;
-                        content: "x";
+                        content: "\f00d";
+                        font: var(--fa-font-solid);
+                        font-size: 3rem;;
                         font-size: 3rem;
                         font-weight: 500;
                         color: $primary;

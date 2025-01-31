@@ -90,6 +90,7 @@ p,
 a {
     font-size: inherit;
     font-family: "Barlow", serif;
+    font-weight: 700;
 }
 
 .wp-block-button__link {
@@ -103,6 +104,15 @@ ul {
         margin-bottom: 1.125rem;
         font-family: "Barlow", serif;
     }
+}
+
+.font-weight {
+  &__regular {
+    font-weight: 400;
+  }
+  &__bold {
+    font-weight: 700;
+  }
 }
 
 @media screen and (min-width: 1200px) {
