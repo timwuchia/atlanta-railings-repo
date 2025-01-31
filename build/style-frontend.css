@@ -803,7 +803,7 @@ form .gform_body .gform_fields .gfield_required {
     flex: 1 1 auto;
   }
   .wp-site-blocks .site-header .header-main .logo-column .wp-block-image img {
-    width: 6.25rem;
+    width: 12.625rem;
   }
   .wp-site-blocks .site-header .header-main .logo-column .nav-column {
     flex: 2 1 auto;
