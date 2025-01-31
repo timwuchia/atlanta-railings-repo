@@ -75,6 +75,8 @@
                 margin-right: 0 !important;
                 transition: margin 1s ease;
                 max-width: 17.5rem;
+                display: flex;
+                flex-direction: column;
                 p {
                     max-width: 15rem;
                 }

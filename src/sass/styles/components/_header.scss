@@ -86,11 +86,6 @@
                 }
                 .logo-column {
                     flex: unset;
-                    .wp-block-image {
-                        img {
-                            width: calc(250rem / 16);
-                        }
-                    }
                 }
             }
         }
