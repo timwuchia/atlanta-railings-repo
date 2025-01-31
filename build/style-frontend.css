@@ -97,8 +97,8 @@ p,
 
 a {
   font-size: inherit;
-  font-family: "Barlow", serif;
-  font-weight: 700;
+  font: var(--unnamed-font-style-normal) normal 700 16px/19px Barlow Semi Condensed;
+  font-family: "Barlow";
 }
 
 .wp-block-button__link {
