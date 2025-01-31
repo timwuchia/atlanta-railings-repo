@@ -178,11 +178,17 @@ html {
 
 
 .site-helper-header {
-    padding: 0 1.25rem;
     background-color: $primary;
+    padding: .5rem 1rem;
+    @media screen and (min-width:$tablet){
+        padding: .5rem 2rem;
+    }
     a {
-        color: #fff;
-        text-decoration: none;
+        @extend %linkTertiary;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .wp-block-column {
         justify-content: space-between;
@@ -196,10 +202,20 @@ html {
         &:nth-child(2){
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            a {
+                display: flex;
+                align-items: center;
+            }
             @media screen and (min-width: $tablet){
                 justify-content: flex-end;
                 p:first-child {
                     margin-right: 1rem;
+                }
+                p:last-child {
+                    i {
+                        margin-bottom: -5px;
+                    }
                 }
             }
             

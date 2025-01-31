@@ -6,6 +6,16 @@ $secondary: #313131;
 $tertiary: #DBDBDB;
 $fontWeight: 400;
 $fontWeightBold: 700;
+%linkTertiary {
+    text-decoration: none;
+    color: $tertiary;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+    border-bottom: 2px solid transparent; // Invisible border to prevent layout shift
+    &:hover {
+        color: #fff; // Change text color to white
+        border-bottom-color: #fff; // Add white underline
+    }
+}
 @import "./styles/variables/typography";
 @import "./styles/styles";
 

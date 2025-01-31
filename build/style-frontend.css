@@ -1,6 +1,17 @@
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./.yarn/__virtual__/css-loader-virtual-3aaa1e3b14/0/cache/css-loader-npm-6.11.0-d945f9f4c0-9e3665509f.zip/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./.yarn/__virtual__/postcss-loader-virtual-74bd375515/0/cache/postcss-loader-npm-6.2.1-45828eb0de-ab4e4ffa19.zip/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./.yarn/__virtual__/sass-loader-virtual-b7a73d39f4/0/cache/sass-loader-npm-12.6.0-19096ee50d-1a45bc2096.zip/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/sass/style.scss ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.site-helper-header a {
+  text-decoration: none;
+  color: #DBDBDB;
+  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+.site-helper-header a:hover {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
 html {
   font-family: "Barlow", serif;
   color: #313131;
@@ -98,7 +109,7 @@ p,
 a {
   font-size: inherit;
   font: var(--unnamed-font-style-normal) normal 700 16px/19px Barlow Semi Condensed;
-  font-family: "Barlow";
+  font-weight: 600;
 }
 
 .wp-block-button__link {
@@ -397,12 +408,17 @@ html body {
   }
 }
 .site-helper-header {
-  padding: 0 1.25rem;
   background-color: #1C2D72;
+  padding: 0.5rem 1rem;
 }
-.site-helper-header a {
-  color: #fff;
-  text-decoration: none;
+@media screen and (min-width: 1024px) {
+  .site-helper-header {
+    padding: 0.5rem 2rem;
+  }
+}
+.site-helper-header p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .site-helper-header .wp-block-column {
   justify-content: space-between;
@@ -418,6 +434,11 @@ html body {
 .site-helper-header .wp-block-column:nth-child(2) {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.site-helper-header .wp-block-column:nth-child(2) a {
+  display: flex;
+  align-items: center;
 }
 @media screen and (min-width: 1024px) {
   .site-helper-header .wp-block-column:nth-child(2) {
@@ -425,6 +446,9 @@ html body {
   }
   .site-helper-header .wp-block-column:nth-child(2) p:first-child {
     margin-right: 1rem;
+  }
+  .site-helper-header .wp-block-column:nth-child(2) p:last-child i {
+    margin-bottom: -5px;
   }
 }
 .site-helper-header .wp-block-column .wp-block-list {
@@ -783,7 +807,7 @@ form .gform_body .gform_fields .gfield_required {
   flex: 2 0 auto;
 }
 .wp-site-blocks .site-header .header-main .logo-column .wp-block-image img {
-  width: 6.25rem;
+  width: 150px;
 }
 .wp-site-blocks .site-header .header-main .nav-column {
   flex: 1 1 auto;
@@ -792,7 +816,8 @@ form .gform_body .gform_fields .gfield_required {
 }
 .wp-site-blocks .site-header .header-main .nav-column .wp-block-navigation__responsive-container a {
   color: #1C2D72;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 1200px) {
