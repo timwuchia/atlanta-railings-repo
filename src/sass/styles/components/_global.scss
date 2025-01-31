@@ -455,30 +455,12 @@ h3.get-a-quote {
                 padding: 1rem;
                 border-radius: 50%;
                 color: white !important;
-                @media screen and (min-width: $tablet){
-                    &::after {
-                        font-size: 4rem;
-                    }
-                }
-                &::after {
-                    content: '\f137';
-                    font-size: 2rem;
-                }
             }
             .swiper-button-next {
                 right: 0;
                 padding: 1rem;
                 border-radius: 50%;
                 color: white !important;
-                @media screen and (min-width: $tablet){
-                    &::after {
-                        font-size: 4rem;
-                    }
-                }
-                &::after {
-                    content: '\f138';
-                    font-size: 2rem;
-                }
             }
         }
     }

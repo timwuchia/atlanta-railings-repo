@@ -107,3 +107,29 @@
     
     }
 }
+
+.wp-block-lg-blocks-advanced-slider {
+    .main.swiper {
+        .swiper-button-prev, .swiper-button-next {
+            &:hover {
+                &::after {
+                    color: $secondary;
+                }
+            }
+            &::after {
+                font-size: 4rem;
+                color: $primary;
+            }
+        }
+        .swiper-button-prev {
+            &::after {
+                content: '\f137';
+            }
+        }
+        .swiper-button-next {
+            &::after {
+                content: '\f138';
+            }
+        }
+    }
+}
