@@ -450,6 +450,7 @@ html body {
     position: absolute;
     top: 70px;
     left: 100px;
+    z-index: 5;
   }
   .video-banner {
     height: 540px;

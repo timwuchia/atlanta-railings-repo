@@ -229,6 +229,7 @@ $videoWrapperHeightDesktop: 1500px;
         position: absolute;
         top: $estimatedTopPosition;
         left: 100px;
+        z-index: 5;
     }
     .video-banner {
         height: $videoHeight;
