@@ -17,6 +17,16 @@ $fontWeightBold: 700;
         border-bottom-color: #fff; // Add white underline
     }
 }
+%linkPrimary {
+    text-decoration: none;
+    color: $primary;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+    border-bottom: 2px solid transparent; // Invisible border to prevent layout shift
+    &:hover {
+        color: $secondary;
+        border-bottom-color: $secondary; // Add white underline
+    }
+}
 @import "./styles/variables/typography";
 @import "./styles/styles";
 
