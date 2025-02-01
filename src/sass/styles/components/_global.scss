@@ -312,6 +312,7 @@ $videoWrapperHeightDesktop: 1500px;
             }
             h2 {
                 text-align: left;
+                padding-right: 0;
             }
             align-items: flex-start;
         }
@@ -495,7 +496,7 @@ h3.get-a-quote {
     .wp-block-lg-blocks-advanced-slider {
         min-height: 400px;
         img {
-            min-height: 400px;
+            height: 600px;
         }
         // .swiper-wrapper {
         //     height: 400px !important;

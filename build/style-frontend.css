@@ -525,6 +525,7 @@ html body {
   }
   .contained-banner .wp-block-cover__inner-container h2 {
     text-align: left;
+    padding-right: 0;
   }
 }
 
@@ -682,7 +683,7 @@ h3.get-a-quote a {
   min-height: 400px;
 }
 .image-slider .wp-block-lg-blocks-advanced-slider img {
-  min-height: 400px;
+  height: 600px;
 }
 .image-slider .wp-block-lg-blocks-advanced-slider .main .swiper-button-prev {
   padding: 1rem;
