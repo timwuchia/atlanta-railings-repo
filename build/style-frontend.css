@@ -420,7 +420,7 @@ html body {
 .video-banner {
   position: relative;
   width: 100vw;
-  height: 220px; /* Full-screen height */
+  height: 180px; /* Full-screen height */
   overflow: hidden;
   margin-right: 0 !important;
   margin-left: 0 !important;
