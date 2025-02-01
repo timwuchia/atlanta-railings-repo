@@ -117,7 +117,13 @@
                 }
             }
             &::after {
-                font-size: 4rem;
+                font-size: 1.5rem;
+                @media screen and (min-width: $tablet){
+                    font-size: 2.5rem;
+                }
+                @media screen and (min-width: $desktop){
+                    font-size: 4rem;
+                }
                 color: $primary;
             }
         }

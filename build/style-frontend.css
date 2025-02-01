@@ -690,7 +690,7 @@ h3.get-a-quote a {
   color: white !important;
 }
 .image-slider .wp-block-lg-blocks-advanced-slider .main .swiper-button-next {
-  right: 0;
+  right: 1rem;
   padding: 1rem;
   border-radius: 50%;
   color: white !important;
@@ -1718,8 +1718,18 @@ nav.main-nav div.wp-block-navigation__responsive-container div.wp-block-navigati
   color: #313131;
 }
 .wp-block-lg-blocks-advanced-slider .main.swiper .swiper-button-prev::after, .wp-block-lg-blocks-advanced-slider .main.swiper .swiper-button-next::after {
-  font-size: 4rem;
+  font-size: 1.5rem;
   color: #1C2D72;
+}
+@media screen and (min-width: 1024px) {
+  .wp-block-lg-blocks-advanced-slider .main.swiper .swiper-button-prev::after, .wp-block-lg-blocks-advanced-slider .main.swiper .swiper-button-next::after {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wp-block-lg-blocks-advanced-slider .main.swiper .swiper-button-prev::after, .wp-block-lg-blocks-advanced-slider .main.swiper .swiper-button-next::after {
+    font-size: 4rem;
+  }
 }
 .wp-block-lg-blocks-advanced-slider .main.swiper .swiper-button-prev::after {
   content: "\f137";
@@ -1771,7 +1781,7 @@ nav.main-nav div.wp-block-navigation__responsive-container div.wp-block-navigati
   left: 1rem;
 }
 .wp-block-lg-blocks-advanced-slider.testominials-slider .main .swiper-button-next {
-  right: 1rem;
+  right: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
