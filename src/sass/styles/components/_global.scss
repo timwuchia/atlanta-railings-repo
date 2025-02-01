@@ -208,14 +208,14 @@ html {
 
 $videoHeight: 540px;
 $videoWrapperHeight: 1000px;
-$estimatedTopPosition: 100px;
-$estimatedTopPositionDesktop: 170px; 
+$estimatedTopPosition: 70px;
+$estimatedTopPositionDesktop: 100px; 
 $videoHeightDesktop: 600px;
 $videoWrapperHeightDesktop: 1500px;
 
 @media screen and (min-width: $tabletSmall){
     .video-banner {
-        height: 500px;
+        height: 400px;
     }
 
     .video-background {
@@ -240,6 +240,9 @@ $videoWrapperHeightDesktop: 1500px;
 }
 
 @media screen and (min-width: $desktop){
+    #video-banner-content-wrapper {
+        top: $estimatedTopPositionDesktop;
+    }
     .video-banner {
         height: $videoHeightDesktop;
     }
