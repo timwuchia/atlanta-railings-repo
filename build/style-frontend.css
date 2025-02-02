@@ -1059,6 +1059,9 @@ form .gform_body .gform_fields .gfield_required {
   margin-top: 0;
   margin-bottom: 0;
 }
+.site-helper-header p i {
+  margin-right: 0.25rem;
+}
 .site-helper-header .wp-block-column {
   justify-content: space-between;
 }
@@ -1085,9 +1088,6 @@ form .gform_body .gform_fields .gfield_required {
   }
   .site-helper-header .wp-block-column:nth-child(2) p:first-child {
     margin-right: 1rem;
-  }
-  .site-helper-header .wp-block-column:nth-child(2) p:last-child i {
-    margin-bottom: -5px;
   }
 }
 .site-helper-header .wp-block-column .wp-block-list {
