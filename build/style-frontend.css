@@ -630,6 +630,9 @@ h4.get-a-quote {
   right: 2rem;
   bottom: 2rem;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (min-width: 1024px) {
   h4.get-a-quote {
