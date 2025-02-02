@@ -489,7 +489,7 @@ h3.get-a-quote {
     &__overlay {
         position: absolute;
         left: calc(50% - $overlayWidth/2);
-        bottom: 1.5rem;
+        bottom: 2.5rem;
         z-index: 10;
         width: $overlayWidth;
     }
