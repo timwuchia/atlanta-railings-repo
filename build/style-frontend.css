@@ -262,6 +262,17 @@ ul li {
   }
 }
 
+p a {
+  text-decoration: none;
+  color: #1C2D72;
+  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+p a:hover {
+  color: #313131;
+  border-bottom-color: #313131;
+}
+
 .gform_button {
   border-radius: 9999px !important;
   font-weight: 700 !important;
@@ -838,6 +849,7 @@ form .gform_body .gform_fields .gfield_required {
 }
 .sales-number p {
   margin-bottom: 0;
+  margin-top: 0.5rem;
 }
 @media (max-width: 1200px) {
   .sales-number {
