@@ -425,6 +425,9 @@ h4.get-a-quote {
     .has-extra-large-font-size {
         font-size: 2rem;
     }
+    &.has-background {
+        padding: .5rem;
+    }
     a {
         text-decoration: none;
         display: flex;

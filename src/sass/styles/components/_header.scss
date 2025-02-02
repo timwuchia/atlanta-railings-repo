@@ -69,6 +69,16 @@
                         justify-content: flex-start;
                     }
                 }
+                .wp-block-navigation__responsive-container-content {
+                    > ul.wp-block-navigation__container { // level 1 nav
+                        > li {
+                            padding: 1rem 0;
+                            .wp-block-navigation__submenu-container {
+                                top: 100%;
+                            }
+                        }
+                    }
+                }
                 li {
                     &.wp-block-navigation-item  {
                         margin-bottom: 0;
