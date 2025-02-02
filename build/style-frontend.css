@@ -323,6 +323,10 @@ p a:hover {
   }
 }
 
+.reduced-margin-bottom {
+  margin-bottom: -5px;
+}
+
 .mw-600 {
   max-width: 600px !important;
 }
