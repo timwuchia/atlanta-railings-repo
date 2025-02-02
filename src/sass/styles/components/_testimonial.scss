@@ -86,9 +86,21 @@
                     margin-right: 0 !important;
                 }
             }
-            .swiper-slide-next {
-                .swiper-slide__content {
-                    margin-left: 0 !important;
+            &.swiper {
+                .swiper-button-next, .swiper-button-prev {
+                    &::after {
+                        color: $secondary;
+                    }
+                    &:hover {
+                        &::after {
+                            color: $primary;
+                        }
+                    }
+                }
+                .swiper-slide-next {
+                    .swiper-slide__content {
+                        margin-left: 0 !important;
+                    }
                 }
             }
         }

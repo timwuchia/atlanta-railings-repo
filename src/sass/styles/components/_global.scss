@@ -312,7 +312,7 @@ $videoWrapperHeightDesktop: 1500px;
             }
             h2 {
                 text-align: left;
-                padding-right: 0;
+                padding-right: 0 !important;
             }
             align-items: flex-start;
         }
@@ -513,13 +513,11 @@ h4.get-a-quote {
                 // right: 3rem;
                 padding: 1rem;
                 border-radius: 50%;
-                color: white !important;
             }
             .swiper-button-next {
                 right: 1rem;
                 padding: 1rem;
                 border-radius: 50%;
-                color: white !important;
             }
         }
     }

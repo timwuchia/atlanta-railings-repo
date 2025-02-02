@@ -525,7 +525,7 @@ html body {
   }
   .contained-banner .wp-block-cover__inner-container h2 {
     text-align: left;
-    padding-right: 0;
+    padding-right: 0 !important;
   }
 }
 
@@ -695,13 +695,11 @@ h4.get-a-quote a {
 .image-slider .wp-block-lg-blocks-advanced-slider .main .swiper-button-prev {
   padding: 1rem;
   border-radius: 50%;
-  color: white !important;
 }
 .image-slider .wp-block-lg-blocks-advanced-slider .main .swiper-button-next {
   right: 1rem;
   padding: 1rem;
   border-radius: 50%;
-  color: white !important;
 }
 
 .wp-block-lg-blocks-accordion > .accordion-container {
@@ -1757,11 +1755,11 @@ nav.main-nav div.wp-block-navigation__responsive-container div.wp-block-navigati
   }
 }
 .wp-block-lg-blocks-advanced-slider .main.swiper .swiper-button-prev:hover::after, .wp-block-lg-blocks-advanced-slider .main.swiper .swiper-button-next:hover::after {
-  color: #313131;
+  color: #1C2D72;
 }
 .wp-block-lg-blocks-advanced-slider .main.swiper .swiper-button-prev::after, .wp-block-lg-blocks-advanced-slider .main.swiper .swiper-button-next::after {
   font-size: 1.5rem;
-  color: #1C2D72;
+  color: #fff;
 }
 @media screen and (min-width: 1024px) {
   .wp-block-lg-blocks-advanced-slider .main.swiper .swiper-button-prev::after, .wp-block-lg-blocks-advanced-slider .main.swiper .swiper-button-next::after {
@@ -1862,7 +1860,13 @@ nav.main-nav div.wp-block-navigation__responsive-container div.wp-block-navigati
   .wp-block-lg-blocks-advanced-slider.testominials-slider .main .swiper-slide-active .swiper-slide__content {
     margin-right: 0 !important;
   }
-  .wp-block-lg-blocks-advanced-slider.testominials-slider .main .swiper-slide-next .swiper-slide__content {
+  .wp-block-lg-blocks-advanced-slider.testominials-slider .main.swiper .swiper-button-next::after, .wp-block-lg-blocks-advanced-slider.testominials-slider .main.swiper .swiper-button-prev::after {
+    color: #313131;
+  }
+  .wp-block-lg-blocks-advanced-slider.testominials-slider .main.swiper .swiper-button-next:hover::after, .wp-block-lg-blocks-advanced-slider.testominials-slider .main.swiper .swiper-button-prev:hover::after {
+    color: #1C2D72;
+  }
+  .wp-block-lg-blocks-advanced-slider.testominials-slider .main.swiper .swiper-slide-next .swiper-slide__content {
     margin-left: 0 !important;
   }
 }

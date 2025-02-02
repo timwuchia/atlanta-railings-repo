@@ -113,7 +113,7 @@
         .swiper-button-prev, .swiper-button-next {
             &:hover {
                 &::after {
-                    color: $secondary;
+                    color: $primary;
                 }
             }
             &::after {
@@ -124,7 +124,7 @@
                 @media screen and (min-width: $desktop){
                     font-size: 4rem;
                 }
-                color: $primary;
+                color: #fff;
             }
         }
         .swiper-button-prev {
