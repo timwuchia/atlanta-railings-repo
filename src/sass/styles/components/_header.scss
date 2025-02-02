@@ -74,13 +74,15 @@
                         > li {
                             padding: 1rem 0;
                             ul.wp-block-navigation__submenu-container {
-                                padding-left: 0 !important;
-                                padding-right: 0 !important;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                align-items: center;
-                                top: 100%;
+                                @media screen and (min-width: $desktop){
+                                    padding-left: 0 !important;
+                                    padding-right: 0 !important;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    top: 100%;
+                                }
                             }
                         }
                     }

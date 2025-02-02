@@ -913,6 +913,8 @@ form .gform_body .gform_fields .gfield_required {
   .wp-site-blocks .site-header .header-main .wp-block-navigation__responsive-container-content > ul.wp-block-navigation__container > li {
     padding: 1rem 0;
   }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
   .wp-site-blocks .site-header .header-main .wp-block-navigation__responsive-container-content > ul.wp-block-navigation__container > li ul.wp-block-navigation__submenu-container {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -922,6 +924,8 @@ form .gform_body .gform_fields .gfield_required {
     align-items: center;
     top: 100%;
   }
+}
+@media screen and (min-width: 1200px) {
   .wp-site-blocks .site-header .header-main li.wp-block-navigation-item {
     margin-bottom: 0;
   }
