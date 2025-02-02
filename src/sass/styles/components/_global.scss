@@ -217,7 +217,7 @@ html {
 
 .video-banner-content {
     max-width: 458px;
-    padding: 3rem;
+    padding: 2rem;
     background-color: rgba(#fff, 0.7);
 }
 
@@ -245,7 +245,7 @@ $videoHeight: 540px;
 $videoWrapperHeight: 1000px;
 $estimatedTopPosition: 70px;
 $estimatedTopPositionDesktop: 100px; 
-$videoHeightDesktop: 600px;
+$videoHeightDesktop: 700px;
 $videoWrapperHeightDesktop: 1500px;
 
 @media screen and (min-width: $tabletSmall){
