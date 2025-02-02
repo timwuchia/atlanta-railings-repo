@@ -27,6 +27,9 @@ $fontWeightBold: 700;
         border-bottom-color: $secondary; // Add white underline
     }
 }
+:root {
+    --wp--style--global--wide-size: 1280px
+}
 @import "./styles/variables/typography";
 @import "./styles/styles";
 

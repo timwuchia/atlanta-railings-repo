@@ -12,6 +12,10 @@
   border-bottom-color: #fff;
 }
 
+:root {
+  --wp--style--global--wide-size: 1280px ;
+}
+
 html {
   font-family: "Barlow", serif;
   color: #313131;
@@ -107,7 +111,7 @@ p,
 
 a {
   font-size: inherit;
-  font: var(--unnamed-font-style-normal) normal 700 16px/19px Barlow Semi Condensed;
+  font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 600;
 }
 
@@ -874,7 +878,13 @@ form .gform_body .gform_fields .gfield_required {
   .wp-site-blocks .site-header .header-main .wp-block-navigation__responsive-container-content > ul.wp-block-navigation__container > li {
     padding: 1rem 0;
   }
-  .wp-site-blocks .site-header .header-main .wp-block-navigation__responsive-container-content > ul.wp-block-navigation__container > li .wp-block-navigation__submenu-container {
+  .wp-site-blocks .site-header .header-main .wp-block-navigation__responsive-container-content > ul.wp-block-navigation__container > li ul.wp-block-navigation__submenu-container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     top: 100%;
   }
   .wp-site-blocks .site-header .header-main li.wp-block-navigation-item {
@@ -894,6 +904,7 @@ form .gform_body .gform_fields .gfield_required {
 @media screen and (min-width: 1440px) {
   .wp-site-blocks .site-header .header-main .nav-column {
     justify-content: flex-end !important;
+    margin-left: 1.5rem;
   }
   .wp-site-blocks .site-header .header-main .logo-column {
     flex: unset;
