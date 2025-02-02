@@ -32,7 +32,7 @@
             padding-left: 0;
             a {
                 text-decoration: none;
-                display: block;
+                display: inline-block;
             }
         }
     }
@@ -50,6 +50,37 @@
             flex: 0 0 40%;
             img {
                 width: 150px;
+                @media screen and (min-width: $desktop){
+                    width: 200px;
+                }
+            }
+        }
+
+        >.wp-block-column:not(:first-child){
+            a {
+                text-decoration: none;
+                color: $tertiary;
+                transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+                border-bottom: 2px solid transparent; // Invisible border to prevent layout shift
+                &:hover {
+                    color: #fff; // Change text color to white
+                    border-bottom-color: #fff; // Add white underline
+                }
+            }
+        }
+
+        >.wp-block-column:first-child {
+            a {
+                &:not(.has-text-color){
+                    color: $tertiary !important;
+                    
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+        
+                    &:hover {
+                        color: var(--wp--preset--color--white) !important;
+                    }
+                }
             }
         }
 
@@ -69,20 +100,6 @@
             }
             @media screen and (min-width: $tablet){
                 flex: 0 0 20%;
-            }
-        }
-
-        a {
-            &:not(.has-text-color){
-                color: $tertiary !important;
-                
-                text-decoration: none;
-                transition: color 0.3s ease;
-    
-                &:hover {
-                    color: var(--wp--preset--color--white) !important;
-                    text-decoration: underline;
-                }
             }
         }
 
@@ -262,16 +279,11 @@
     .site-footer {
         .footer-main {
             justify-content: space-between;
-            .footer-logo {
-                max-width: fit-content;
-            }
             .footer-contact {
                 row-gap: 0.5rem;
-                // align-items: center;
                 max-width: fit-content;
             }
             .footer-social {
-                // align-items: center;
                 display: flex;
                 max-width: fit-content;
             }

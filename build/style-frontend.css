@@ -605,23 +605,27 @@ body:not(.block-editor-page) img {
   object-fit: cover;
 }
 
-h3.get-a-quote {
+.page-id-25 h4.get-a-quote {
+  display: none;
+}
+
+h4.get-a-quote {
   position: fixed;
   z-index: 99;
   right: 2rem;
   bottom: 2rem;
   border-radius: 50%;
-  padding: 0.75rem;
 }
 @media screen and (min-width: 1024px) {
-  h3.get-a-quote {
-    padding: 0.75em 1.5em;
+  h4.get-a-quote {
+    width: 120px;
+    height: 120px;
   }
 }
-h3.get-a-quote .has-extra-large-font-size {
+h4.get-a-quote .has-extra-large-font-size {
   font-size: 2rem;
 }
-h3.get-a-quote a {
+h4.get-a-quote a {
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -1073,7 +1077,7 @@ form .gform_body .gform_fields .gfield_required {
 }
 .site-footer .more-info-column ul a, .site-footer .product-column ul a {
   text-decoration: none;
-  display: block;
+  display: inline-block;
 }
 .site-footer .footer-main {
   padding: 3rem 1.25rem;
@@ -1089,6 +1093,29 @@ form .gform_body .gform_fields .gfield_required {
 }
 .site-footer .footer-main > .wp-block-column:first-child img {
   width: 150px;
+}
+@media screen and (min-width: 1200px) {
+  .site-footer .footer-main > .wp-block-column:first-child img {
+    width: 200px;
+  }
+}
+.site-footer .footer-main > .wp-block-column:not(:first-child) a {
+  text-decoration: none;
+  color: #DBDBDB;
+  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+.site-footer .footer-main > .wp-block-column:not(:first-child) a:hover {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+.site-footer .footer-main > .wp-block-column:first-child a:not(.has-text-color) {
+  color: #DBDBDB !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.site-footer .footer-main > .wp-block-column:first-child a:not(.has-text-color):hover {
+  color: var(--wp--preset--color--white) !important;
 }
 .site-footer .footer-main > .wp-block-column:nth-child(2) {
   flex: 0 0 40%;
@@ -1112,15 +1139,6 @@ form .gform_body .gform_fields .gfield_required {
   .site-footer .footer-main > .wp-block-column:last-child {
     flex: 0 0 20%;
   }
-}
-.site-footer .footer-main a:not(.has-text-color) {
-  color: #DBDBDB !important;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-.site-footer .footer-main a:not(.has-text-color):hover {
-  color: var(--wp--preset--color--white) !important;
-  text-decoration: underline;
 }
 .site-footer .footer-main .footer-contact {
   display: flex;
@@ -1253,10 +1271,6 @@ form .gform_body .gform_fields .gfield_required {
 @media screen and (min-width: 768px) {
   .site-footer .footer-main {
     justify-content: space-between;
-  }
-  .site-footer .footer-main .footer-logo {
-    max-width: -moz-fit-content;
-    max-width: fit-content;
   }
   .site-footer .footer-main .footer-contact {
     row-gap: 0.5rem;
