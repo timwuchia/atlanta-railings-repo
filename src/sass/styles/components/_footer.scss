@@ -306,6 +306,9 @@
         .footer-legal {
             .footer-copyright {
                 text-align: left;
+                .copyright {
+                    display: flex;
+                }
             }
             .footer-longevity {
                 display: flex;

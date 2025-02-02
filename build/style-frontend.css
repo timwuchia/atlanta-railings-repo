@@ -1313,6 +1313,9 @@ form .gform_body .gform_fields .gfield_required {
   .site-footer .footer-legal .footer-copyright {
     text-align: left;
   }
+  .site-footer .footer-legal .footer-copyright .copyright {
+    display: flex;
+  }
   .site-footer .footer-legal .footer-longevity {
     display: flex;
     justify-content: flex-end;
