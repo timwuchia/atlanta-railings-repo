@@ -537,6 +537,9 @@ h4.get-a-quote {
                     content: "\f068";
                 }
             }
+            h3 {
+                font-size: 1.5rem;
+            }
             color: $primary;
             cursor:  pointer;
             &::after {
