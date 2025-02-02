@@ -5,7 +5,7 @@
   text-decoration: none;
   color: #DBDBDB;
   transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 .site-helper-header a:hover {
   color: #fff;
@@ -702,7 +702,7 @@ h4.get-a-quote a {
 }
 
 .wp-block-lg-blocks-accordion > .accordion-container {
-  border-bottom: 2px solid #DBDBDB;
+  border-bottom: 1px solid #DBDBDB;
 }
 .wp-block-lg-blocks-accordion > .accordion-container:first-child {
   border-top: 2px solid #DBDBDB;
@@ -874,7 +874,14 @@ form .gform_body .gform_fields .gfield_required {
     margin-bottom: 0;
   }
   .wp-site-blocks .site-header .header-main li.wp-block-navigation-item a {
-    font-size: 1rem;
+    text-decoration: none;
+    color: #1C2D72;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+    border-bottom: 1px solid transparent;
+  }
+  .wp-site-blocks .site-header .header-main li.wp-block-navigation-item a:hover {
+    color: #313131;
+    border-bottom-color: #313131;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -1103,7 +1110,7 @@ form .gform_body .gform_fields .gfield_required {
   text-decoration: none;
   color: #DBDBDB;
   transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 .site-footer .footer-main > .wp-block-column:not(:first-child) a:hover {
   color: #fff;
@@ -1259,13 +1266,23 @@ form .gform_body .gform_fields .gfield_required {
   text-align: center;
   gap: 0.75rem;
 }
+.site-footer .footer-legal .copyright {
+  font-weight: 400;
+  font-family: "Barlow", serif;
+}
 .site-footer .footer-legal .footer-longevity p {
   margin: 0;
   text-align: center;
 }
 .site-footer .footer-legal .footer-longevity p a {
-  color: var(--wp--preset--color--black);
-  text-decoration: underline;
+  text-decoration: none;
+  color: #1C2D72;
+  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+.site-footer .footer-legal .footer-longevity p a:hover {
+  color: #313131;
+  border-bottom-color: #313131;
 }
 
 @media screen and (min-width: 768px) {

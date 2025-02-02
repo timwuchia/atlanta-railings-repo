@@ -73,7 +73,14 @@
                     &.wp-block-navigation-item  {
                         margin-bottom: 0;
                         a {
-                            font-size: 1rem;
+                            text-decoration: none;
+                            color: $primary;
+                            transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+                            border-bottom: 1px solid transparent; // Invisible border to prevent layout shift
+                            &:hover {
+                                color: $secondary;
+                                border-bottom-color: $secondary; // Add white underline
+                            }
                         }
                     }
                 }

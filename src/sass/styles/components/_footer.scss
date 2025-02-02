@@ -61,7 +61,7 @@
                 text-decoration: none;
                 color: $tertiary;
                 transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
-                border-bottom: 2px solid transparent; // Invisible border to prevent layout shift
+                border-bottom: 1px solid transparent; // Invisible border to prevent layout shift
                 &:hover {
                     color: #fff; // Change text color to white
                     border-bottom-color: #fff; // Add white underline
@@ -261,14 +261,25 @@
         text-align: center;
         gap: 0.75rem;
 
+        .copyright {
+            font-weight: 400;
+            font-family: "Barlow", serif;
+        }
+
         .footer-longevity {
             p {
                 margin: 0;
                 text-align: center;
 
                 a {
-                    color: var(--wp--preset--color--black);
-                    text-decoration: underline;
+                    text-decoration: none;
+                    color: $primary;
+                    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+                    border-bottom: 1px solid transparent; // Invisible border to prevent layout shift
+                    &:hover {
+                        color: $secondary;
+                        border-bottom-color: $secondary; // Add white underline
+                    }
                 }
             }
         }
