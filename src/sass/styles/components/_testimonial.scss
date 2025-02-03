@@ -9,6 +9,7 @@
             .stars {
                 color: $primary;
                 font-size: 30px;
+                margin-bottom: 1rem;
             }
             position: relative;
             top: unset;
@@ -33,6 +34,12 @@
         .swiper-button-prev,
         .swiper-button-next {
             top: calc(50% - 1.375rem);
+            color: $secondary;
+            &:hover {
+                &::after {
+                    color: $primary;
+                }
+            }
             &.swiper-button-disabled {
                 pointer-events: initial;
                 cursor: pointer;
@@ -87,16 +94,6 @@
                 }
             }
             &.swiper {
-                .swiper-button-next, .swiper-button-prev {
-                    &::after {
-                        color: $secondary;
-                    }
-                    &:hover {
-                        &::after {
-                            color: $primary;
-                        }
-                    }
-                }
                 .swiper-slide-next {
                     .swiper-slide__content {
                         margin-left: 0 !important;
