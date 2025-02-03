@@ -1195,9 +1195,6 @@ form .gform_body .gform_fields .gfield_required {
 .site-footer .footer-main > .wp-block-column:first-child a:not(.has-text-color):hover {
   color: var(--wp--preset--color--white) !important;
 }
-.site-footer .footer-main > .wp-block-column:nth-child(2) {
-  flex: 0 0 40%;
-}
 @media screen and (min-width: 1024px) {
   .site-footer .footer-main > .wp-block-column:nth-child(2) {
     flex: 0 0 30%;
