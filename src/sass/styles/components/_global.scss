@@ -643,7 +643,10 @@ h4.get-a-quote {
             $gap: 1rem;
             gap:$gap;
             .wp-block-lg-blocks-card {
-                flex: 0 0 calc(33.3333333333% - ( $gap - $gap / 3))
+                flex: 0 0 calc(33.3333333333% - ( $gap - $gap / 3));
+                a {
+                    font-family: 'Barlow';
+                }
             }
         } 
     }

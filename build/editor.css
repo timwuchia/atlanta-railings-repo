@@ -1,0 +1,51 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./.yarn/__virtual__/css-loader-virtual-3aaa1e3b14/0/cache/css-loader-npm-6.11.0-d945f9f4c0-9e3665509f.zip/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./.yarn/__virtual__/postcss-loader-virtual-74bd375515/0/cache/postcss-loader-npm-6.2.1-45828eb0de-ab4e4ffa19.zip/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./.yarn/__virtual__/sass-loader-virtual-b7a73d39f4/0/cache/sass-loader-npm-12.6.0-19096ee50d-1a45bc2096.zip/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/sass/styles.editor.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/**
+The css in this file is only for backend editor.
+This will be used to match the fonts, sizes etc in backend editor with the frontend
+*/
+/*body {
+  background: #ddd;
+}*/
+.header-utility .utility-contact-column {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1 1 auto !important;
+}
+.header-utility .utility-contact-column .wp-block-columns {
+  flex: 1 1 auto;
+  margin-top: 0;
+}
+.header-utility .utility-contact-column .wp-block-columns .icon-column .wp-block-lg-blocks-font-awesome {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-utility .utility-contact-column .wp-block-columns .icon-column .wp-block-lg-blocks-font-awesome svg {
+  max-width: 1.5rem;
+}
+.header-utility .utility-contact-column .wp-block-columns .link-column a {
+  color: var(--wp--preset--color--black);
+}
+
+.footer-main .link-column a {
+  color: var(--wp--preset--color--black);
+}
+
+.footer-legal {
+  margin-top: 0;
+}
+.footer-legal a {
+  color: var(--wp--preset--color--black);
+  text-decoration: underline;
+}
+
+.icon-column .wp-block-lg-blocks-font-awesome {
+  display: flex;
+  justify-content: flex-end;
+}
+.icon-column .wp-block-lg-blocks-font-awesome svg {
+  max-width: 1.5rem;
+}
+
+/*# sourceMappingURL=editor.css.map*/
