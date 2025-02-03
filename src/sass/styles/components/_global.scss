@@ -466,7 +466,9 @@ h4.get-a-quote {
 
 .swap-order {
     &__tablet {
+        flex-direction: column;
         @media screen and (min-width: $tablet){
+            flex-direction: row;
             .wp-block-column {
                 &:first-child {
                     order: 2

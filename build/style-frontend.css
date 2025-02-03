@@ -664,7 +664,13 @@ h4.get-a-quote a {
   align-items: center !important;
 }
 
+.swap-order__tablet {
+  flex-direction: column;
+}
 @media screen and (min-width: 1024px) {
+  .swap-order__tablet {
+    flex-direction: row;
+  }
   .swap-order__tablet .wp-block-column:first-child {
     order: 2;
   }
