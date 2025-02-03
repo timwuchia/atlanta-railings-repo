@@ -34,7 +34,9 @@
         .swiper-button-prev,
         .swiper-button-next {
             top: calc(50% - 1.375rem);
-            color: $secondary;
+            &::after {
+                color: $secondary;
+            }
             &:hover {
                 &::after {
                     color: $primary;

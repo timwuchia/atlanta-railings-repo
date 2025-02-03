@@ -1876,6 +1876,9 @@ nav.main-nav div.wp-block-navigation__responsive-container div.wp-block-navigati
 .wp-block-lg-blocks-advanced-slider.testominials-slider .main .swiper-button-prev,
 .wp-block-lg-blocks-advanced-slider.testominials-slider .main .swiper-button-next {
   top: calc(50% - 1.375rem);
+}
+.wp-block-lg-blocks-advanced-slider.testominials-slider .main .swiper-button-prev::after,
+.wp-block-lg-blocks-advanced-slider.testominials-slider .main .swiper-button-next::after {
   color: #313131;
 }
 .wp-block-lg-blocks-advanced-slider.testominials-slider .main .swiper-button-prev:hover::after,
