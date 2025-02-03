@@ -751,6 +751,9 @@ h4.get-a-quote a {
 .wp-block-lg-blocks-accordion > .accordion-container .accordion-collapse {
   padding: 0;
 }
+.wp-block-lg-blocks-accordion > .accordion-container .accordion-collapse .accordion-body {
+  padding-right: 3rem;
+}
 .wp-block-lg-blocks-accordion > .accordion-container .accordion-collapse .accordion-body p {
   margin: 0;
 }
