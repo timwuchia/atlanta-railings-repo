@@ -124,9 +124,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // Windows Ready Handler
 (function ($) {
-  $(document).ready(function () {
-    const video = $('[data-youtube]');
-  });
+  $(document).ready(function () {});
 })(jQuery);
 
 /***/ }),
