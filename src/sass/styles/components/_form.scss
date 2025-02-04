@@ -2,9 +2,11 @@
     form {
         .gform-footer {
             input[type=submit] {
-                transition: background-color 0.3s ease-in-out !important;
+                border-radius: 40px !important;
+                transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out !important;
                 &:hover {
                     background-color: #fff !important;
+                    border-radius: 0 !important;
                 }
             }
         }

@@ -1993,10 +1993,12 @@ nav.main-nav div.wp-block-navigation__responsive-container div.wp-block-navigati
   }
 }
 .gform_wrapper form .gform-footer input[type=submit] {
-  transition: background-color 0.3s ease-in-out !important;
+  border-radius: 40px !important;
+  transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out !important;
 }
 .gform_wrapper form .gform-footer input[type=submit]:hover {
   background-color: #fff !important;
+  border-radius: 0 !important;
 }
 @media (max-width: 768px) {
   .gform_wrapper form .gform-body .gfield textarea.large {
