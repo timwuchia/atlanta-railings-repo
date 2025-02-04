@@ -911,7 +911,7 @@ form .gform_body .gform_fields .gfield_required {
 }
 .sales-number p {
   margin-bottom: 0;
-  margin-top: 0.5rem;
+  margin-top: 0;
 }
 .sales-number p a {
   font-family: "Barlow", serif;
