@@ -891,6 +891,10 @@ h4.get-a-quote.has-background {
           clip-path: ellipse(60% 80px at top center);
 }
 
+.contact-us {
+  gap: 1rem;
+}
+
 form {
   background-color: #313131;
   padding: 1rem;
@@ -908,6 +912,9 @@ form .gform_body .gform_fields .gfield_required {
 .sales-number p {
   margin-bottom: 0;
   margin-top: 0.5rem;
+}
+.sales-number p a {
+  font-family: "Barlow", serif;
 }
 @media (max-width: 1200px) {
   .sales-number {
@@ -938,6 +945,10 @@ form .gform_body .gform_fields .gfield_required {
 }
 .wp-site-blocks .site-header .header-main .logo-column .wp-block-image img {
   width: 150px;
+  transition: width 0.3s ease-in-out;
+}
+.wp-site-blocks .site-header .header-main .logo-column .wp-block-image img.shrink-on-scroll {
+  width: 100px;
 }
 .wp-site-blocks .site-header .header-main .nav-column {
   flex: 1 1 auto;
@@ -959,7 +970,6 @@ form .gform_body .gform_fields .gfield_required {
   }
   .wp-site-blocks .site-header .header-main .logo-column .wp-block-image img {
     width: 12.625rem;
-    transition: width 0.3s ease-in-out;
   }
   .wp-site-blocks .site-header .header-main .logo-column .wp-block-image img.shrink-on-scroll {
     width: 150px;
