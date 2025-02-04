@@ -661,6 +661,7 @@ h4.get-a-quote {
   justify-content: center;
   flex-direction: column;
   cursor: pointer;
+  font-weight: 700;
 }
 @media screen and (min-width: 1024px) {
   h4.get-a-quote {
