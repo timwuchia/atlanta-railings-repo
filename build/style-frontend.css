@@ -488,9 +488,17 @@ html body {
 @media screen and (min-width: 1024px) {
   #video-banner-content-wrapper {
     position: absolute;
-    top: 70px;
-    left: 100px;
     z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    left: 5rem;
+  }
+  #video-banner-content-wrapper .video-banner-content {
+    max-width: 335px;
   }
   .video-banner {
     height: 540px;
