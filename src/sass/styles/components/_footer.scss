@@ -60,7 +60,7 @@
             a {
                 text-decoration: none;
                 color: $tertiary;
-                transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+                transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out, border-radius 0.3s ease-in-out;
                 border-bottom: 1px solid transparent; // Invisible border to prevent layout shift
                 &:hover {
                     color: #fff; // Change text color to white
