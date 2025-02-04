@@ -287,7 +287,7 @@ p a:hover {
 }
 
 .wp-block-button:not(.is-style-outline) > a {
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease-in-out;
 }
 .wp-block-button:not(.is-style-outline) > a:hover {
   background-color: #313131;
@@ -296,7 +296,7 @@ p a:hover {
 }
 
 .wp-block-button.is-style-outline .has-primary-color {
-  transition: color 0.3s ease, border-radius 0.3s ease;
+  transition: color 0.3s ease, border-radius 0.3s ease-in-out;
 }
 .wp-block-button.is-style-outline .has-primary-color:hover {
   color: #313131 !important;
@@ -371,7 +371,7 @@ figure {
 }
 
 .wp-block-button__link {
-  border-radius: 9999px;
+  border-radius: 40px;
 }
 
 html {
