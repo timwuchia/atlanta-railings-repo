@@ -288,9 +288,6 @@ $videoWrapperHeightDesktop: 1500px;
 }
 
 @media screen and (min-width: $desktop){
-    #video-banner-content-wrapper {
-        top: $estimatedTopPositionDesktop;
-    }
     .video-banner {
         height: $videoHeightDesktop;
     }

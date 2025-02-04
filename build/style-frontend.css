@@ -508,9 +508,6 @@ html body {
   }
 }
 @media screen and (min-width: 1200px) {
-  #video-banner-content-wrapper {
-    top: 100px;
-  }
   .video-banner {
     height: 700px;
   }
