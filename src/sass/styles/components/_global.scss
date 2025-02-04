@@ -351,13 +351,19 @@ body:not(.block-editor-page){
         overflow: hidden;
         box-shadow: 0 0 32px -10px rgba(0,0,0,0.08);
         border: none;
+        border-radius: 0;
         img {
             transition: transform 0.3s ease-in-out;
             transform: scale(1.2);
-            width: calc(100% + 50px);
-            height: calc(100% + 50px);
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
         @media screen and (min-width: $desktop){
+            img {
+                width: calc(100% + 50px);
+                height: calc(100% + 50px);
+            }
             &:hover {
                 img {
                     transform: scale(1);
@@ -434,12 +440,6 @@ body:not(.block-editor-page){
             margin-left: 4px;
             transition: transform 0.3s;
           }
-        }
-      
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
         }
       }
 
