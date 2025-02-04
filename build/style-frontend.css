@@ -535,7 +535,7 @@ html body {
 .contained-banner .wp-block-cover__inner-container h2 {
   text-align: center;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .contained-banner .wp-block-cover__inner-container {
     align-items: flex-start;
   }
@@ -555,17 +555,28 @@ body:not(.block-editor-page) .card-hover {
   overflow: hidden;
   box-shadow: 0 0 32px -10px rgba(0, 0, 0, 0.08);
 }
-body:not(.block-editor-page) .card-hover:hover .card-content {
-  background-color: #F5F5F5;
-  bottom: 100%;
-  transform: translateY(100%);
-  padding: 50px 60px;
-  transition: all 0.35s cubic-bezier(0.1, 0.72, 0.4, 0.97);
-  color: #313131;
+body:not(.block-editor-page) .card-hover img {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.2);
+  width: calc(100% + 50px);
+  height: calc(100% + 50px);
 }
-body:not(.block-editor-page) .card-hover:hover a {
-  opacity: 1;
-  transition: opacity 0.3s 0.35s cubic-bezier(0.1, 0.72, 0.4, 0.97);
+@media screen and (min-width: 1200px) {
+  body:not(.block-editor-page) .card-hover:hover img {
+    transform: scale(1);
+  }
+  body:not(.block-editor-page) .card-hover:hover .card-content {
+    background-color: #F5F5F5;
+    bottom: 100%;
+    transform: translateY(100%);
+    padding: 50px 60px;
+    transition: all 0.35s cubic-bezier(0.1, 0.72, 0.4, 0.97);
+    color: #313131;
+  }
+  body:not(.block-editor-page) .card-hover:hover a {
+    opacity: 1;
+    transition: opacity 0.3s 0.35s cubic-bezier(0.1, 0.72, 0.4, 0.97);
+  }
 }
 body:not(.block-editor-page) .card-hover .card-content {
   text-align: center;
@@ -583,6 +594,8 @@ body:not(.block-editor-page) .card-hover .card-content {
   body:not(.block-editor-page) .card-hover .card-content {
     color: #fff;
     background-color: #313131;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 body:not(.block-editor-page) .card-hover .card-content::before, body:not(.block-editor-page) .card-hover .card-content::after {

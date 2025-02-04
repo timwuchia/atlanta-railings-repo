@@ -321,7 +321,8 @@ $videoWrapperHeightDesktop: 1500px;
         h2 {
             text-align: center;
         }
-        @media screen and (min-width: $tablet){
+        @media screen and (min-width: $tabletSmall){
+            align-items: flex-start;
             .wp-block-buttons {
                 justify-content: flex-start;
             }
@@ -329,7 +330,6 @@ $videoWrapperHeightDesktop: 1500px;
                 text-align: left;
                 padding-right: 0 !important;
             }
-            align-items: flex-start;
         }
     }
 }
@@ -342,24 +342,33 @@ body:not(.block-editor-page){
         position: relative;
         overflow: hidden;
         box-shadow: 0 0 32px -10px rgba(0,0,0,0.08);
-      
-        &:hover {
-            .card-content {
-                background-color: $tertiary;
-                bottom: 100%;
-                transform: translateY(100%);
-                padding: 50px 60px;
-                transition: all 0.35s cubic-bezier(.1,.72,.4,.97);
-                color: $secondary;
-            }
-      
-            a {
-              opacity: 1;
-            //   transform: translate(-50%, 0);
-              transition: opacity 0.3s 0.35s cubic-bezier(.1,.72,.4,.97);
+        img {
+            transition: transform 0.3s ease-in-out;
+            transform: scale(1.2);
+            width: calc(100% + 50px);
+            height: calc(100% + 50px);
+        }
+        @media screen and (min-width: $desktop){
+            &:hover {
+                img {
+                    transform: scale(1);
+                }
+                .card-content {
+                    background-color: $tertiary;
+                    bottom: 100%;
+                    transform: translateY(100%);
+                    padding: 50px 60px;
+                    transition: all 0.35s cubic-bezier(.1,.72,.4,.97);
+                    color: $secondary;
+                }
+          
+                a {
+                  opacity: 1;
+                //   transform: translate(-50%, 0);
+                  transition: opacity 0.3s 0.35s cubic-bezier(.1,.72,.4,.97);
+                }
             }
         }
-      
         .card-content {
           text-align: center;
           background-color: $tertiary;
@@ -367,6 +376,8 @@ body:not(.block-editor-page){
           @media screen and (min-width: $desktop){
             color: #fff;
             background-color: $secondary;
+            padding-left: 60px;
+            padding-right: 60px;
           }
           position: absolute;
           bottom: 0;
