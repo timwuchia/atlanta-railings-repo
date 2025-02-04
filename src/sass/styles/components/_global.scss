@@ -443,15 +443,36 @@ body:not(.block-editor-page){
     display: none;
 }
 
+.page-id-25 .get-free-quote {
+    display: none;
+}
+
+.get-free-quote {
+    .get-quote-form {
+        position: fixed;
+        z-index: 600;
+        right: 2rem;
+        bottom: 2rem;
+        display: none;
+        &.show {
+            display: block;
+        }
+    }
+    .exit-get-free-quote {
+        cursor: pointer;
+    }
+}
+
 h4.get-a-quote {
     position: fixed;
-    z-index: 99;
+    z-index: 600;
     right: 2rem;
     bottom: 2rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     @media screen and (min-width: $tablet){
         width: 120px;
         height: 120px;
