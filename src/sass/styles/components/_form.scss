@@ -1,0 +1,22 @@
+.gform_wrapper {
+    form {
+        .gform-footer {
+            input[type=submit] {
+                transition: background-color 0.3s ease-in-out !important;
+                &:hover {
+                    background-color: #fff !important;
+                }
+            }
+        }
+        .gform-body {
+            .gfield textarea.large {
+                @media (max-width: $tabletSmall){
+                    min-block-size: 10rem;
+                }
+            }
+            .gfield_description {
+                color: white;
+            }
+        }
+    }
+}

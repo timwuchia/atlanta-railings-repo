@@ -647,6 +647,14 @@ body:not(.block-editor-page) img {
 .get-free-quote .get-quote-form.show {
   display: block;
 }
+@media (max-width: 768px) {
+  .get-free-quote .get-quote-form {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 .get-free-quote .exit-get-free-quote {
   cursor: pointer;
 }
@@ -1984,6 +1992,21 @@ nav.main-nav div.wp-block-navigation__responsive-container div.wp-block-navigati
     margin-left: 0 !important;
   }
 }
+.gform_wrapper form .gform-footer input[type=submit] {
+  transition: background-color 0.3s ease-in-out !important;
+}
+.gform_wrapper form .gform-footer input[type=submit]:hover {
+  background-color: #fff !important;
+}
+@media (max-width: 768px) {
+  .gform_wrapper form .gform-body .gfield textarea.large {
+    min-block-size: 10rem;
+  }
+}
+.gform_wrapper form .gform-body .gfield_description {
+  color: white;
+}
+
 .wp-block-buttons {
   gap: 1rem;
 }
