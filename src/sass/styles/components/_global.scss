@@ -253,16 +253,6 @@ $videoHeightDesktop: 700px;
 $videoWrapperHeightDesktop: 1500px;
 
 @media screen and (min-width: $tabletSmall){
-    .video-banner {
-        height: 400px;
-    }
-
-    .video-background {
-        height: 768px;
-    }
-}
-
-@media screen and (min-width: $tablet){
     
     #video-banner-content-wrapper {
         position: absolute;
