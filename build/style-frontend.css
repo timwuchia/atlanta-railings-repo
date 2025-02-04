@@ -591,7 +591,7 @@ body:not(.block-editor-page) .card-hover .card-content {
   color: #313131;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -1px;
   transform: translateY(0);
   transition: all 0.35s 0.35s cubic-bezier(0.1, 0.72, 0.4, 0.97);
   will-change: bottom, background-color, transform;
