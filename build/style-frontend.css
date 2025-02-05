@@ -894,6 +894,9 @@ h4.get-a-quote.has-background {
 .contact-us {
   gap: 1rem;
 }
+.contact-us a {
+  font-family: "Barlow", serif;
+}
 
 form {
   background-color: #313131;
@@ -908,9 +911,6 @@ form .gform_body .gform_fields .gfield_required {
 
 .sales-number.is-layout-flex {
   gap: 1rem;
-}
-.sales-number a {
-  font-family: "Barlow", serif;
 }
 .sales-number p {
   margin-bottom: 0;

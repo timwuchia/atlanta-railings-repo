@@ -735,6 +735,9 @@ h4.get-a-quote {
 
 .contact-us {
     gap: 1rem;
+    a {
+        font-family: 'Barlow', serif;
+    }
 }
 
 form {
@@ -751,9 +754,6 @@ form {
 .sales-number {
     &.is-layout-flex {
         gap: 1rem;
-    }
-    a {
-        font-family: 'Barlow', serif;
     }
     p {
         margin-bottom: 0;
