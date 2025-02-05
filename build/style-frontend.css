@@ -909,12 +909,12 @@ form .gform_body .gform_fields .gfield_required {
 .sales-number.is-layout-flex {
   gap: 1rem;
 }
+.sales-number a {
+  font-family: "Barlow", serif;
+}
 .sales-number p {
   margin-bottom: 0;
   margin-top: 0;
-}
-.sales-number p a {
-  font-family: "Barlow", serif;
 }
 @media (max-width: 1200px) {
   .sales-number {

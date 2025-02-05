@@ -752,12 +752,12 @@ form {
     &.is-layout-flex {
         gap: 1rem;
     }
+    a {
+        font-family: 'Barlow', serif;
+    }
     p {
         margin-bottom: 0;
         margin-top: 0;
-        a {
-            font-family: 'Barlow', serif;
-        }
     }
     @media (max-width: $desktop){
         flex-direction: column;
