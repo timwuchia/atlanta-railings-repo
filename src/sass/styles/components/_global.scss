@@ -215,99 +215,146 @@ html {
 }
 
 
-.video-banner-wrap {
-    padding: 0 !important;
-}
-
-.video-banner-content {
-    max-width: 458px;
-    padding: 2rem;
-    background-color: rgba(#fff, 0.7);
-}
-
-.video-banner {
-    position: relative;
-    width: 100vw;
-    height: 180px; /* Full-screen height */
-    overflow: hidden;
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-    max-width: unset;
-}
-
-.video-background {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
-    height: 400px;
-    transform: translate(-50%, -50%);
-    pointer-events: none; /* Disables all user interactions */
-}
-
-$videoHeight: 540px;
-$videoWrapperHeight: 1000px;
-$estimatedTopPosition: 70px;
-$estimatedTopPositionDesktop: 100px; 
-$videoHeightDesktop: 700px;
-$videoWrapperHeightDesktop: 1500px;
-
-@media screen and (min-width: $tabletSmall){
-    .video-banner {
-        height: 400px;
-    }
-
-    .video-background {
-        height: 768px;
-    }
-}
-
-@media screen and (min-width: $tablet){
+// .video-banner-wrap {
+    //     padding: 0 !important;
+    // }
     
-    #video-banner-content-wrapper {
-        position: absolute;
-        z-index: 5;
-        top: 0;
-        left: 0;
+    // .video-banner-content {
+    //     max-width: 458px;
+    //     padding: 2rem;
+    //     background-color: rgba(#fff, 0.7);
+    // }
+    
+    // .video-banner {
+    //     position: relative;
+    //     width: 100vw;
+    //     height: 180px; /* Full-screen height */
+    //     overflow: hidden;
+    //     margin-right: 0 !important;
+    //     margin-left: 0 !important;
+    //     max-width: unset;
+    // }
+    
+    // .video-background {
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     width: 100vw;
+    //     height: 400px;
+    //     transform: translate(-50%, -50%);
+    //     pointer-events: none; /* Disables all user interactions */
+    // }
+    
+    // $videoHeight: 540px;
+    // $videoWrapperHeight: 1000px;
+    // $estimatedTopPosition: 70px;
+    // $estimatedTopPositionDesktop: 100px; 
+    // $videoHeightDesktop: 700px;
+    // $videoWrapperHeightDesktop: 1500px;
+    
+    // @media screen and (min-width: $tabletSmall){
+    //     .video-banner {
+    //         height: 400px;
+    //     }
+    
+    //     .video-background {
+    //         height: 768px;
+    //     }
+    // }
+    
+    // @media screen and (min-width: $tablet){
+        
+    //     #video-banner-content-wrapper {
+    //         position: absolute;
+    //         z-index: 5;
+    //         top: 0;
+    //         left: 0;
+    //         width: 100%;
+    //         height: 100%;
+    //         align-items: center;
+    //         display: flex;
+    //         left: 5rem;
+    //         .video-banner-content {
+    //             max-width: 415px;
+    //         }
+    //     }
+    //     .video-banner {
+    //         height: $videoHeight;
+    //     }
+    
+    //     .video-background {
+    //         height: $videoWrapperHeight;
+    //     }
+    // }
+    
+    // @media screen and (min-width: $desktop){
+    //     .video-banner {
+    //         height: $videoHeightDesktop;
+    //     }
+    
+    //     .video-background {
+    //         height: $videoWrapperHeightDesktop;
+    //     }
+    // }
+    
+    // /* Transparent overlay to block hover & click interactions */
+    // .video-overlay {
+    //     position: absolute;
+    //     inset: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background: transparent; /* Blocks hover actions */
+    //     z-index: 2;
+    //     pointer-events: auto;
+    // }
+
+.wp-site-blocks .entry-content .alignfull.video-banner-wrap {
+    $height: 500px;
+    $tabletHeight: 640px;
+    position: relative;
+    @extend %clear-horizontal-spacing;
+    padding-left: 0;
+    padding-right: 0;
+    height: $height;
+    
+    .video-banner {
         width: 100%;
-        height: 100%;
-        align-items: center;
-        display: flex;
-        left: 5rem;
-        .video-banner-content {
-            max-width: 415px;
+        height: $height;
+        padding-right: 0;
+        padding-left: 0;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 3rem;
+        video {
+            height: 100%;
+            object-fit: cover;
         }
     }
-    .video-banner {
-        height: $videoHeight;
+    #video-banner-content-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
     }
-
-    .video-background {
-        height: $videoWrapperHeight;
+    @media screen and (min-width: $tabletSmall){
+        height: $tabletHeight;
+        .video-banner {
+            position: absolute;
+            height: 100%;
+            z-index: 1;
+        }
+        #video-banner-content-wrapper {
+            padding-left: calc(var(--full-width-padding) + 2rem) !important;;
+            .video-banner-content {
+                max-width: 450px;
+                padding: 2rem;
+                background-color: rgba(#fff, 0.7);
+            }
+        }
     }
 }
-
-@media screen and (min-width: $desktop){
-    .video-banner {
-        height: $videoHeightDesktop;
-    }
-
-    .video-background {
-        height: $videoWrapperHeightDesktop;
-    }
-}
-
-/* Transparent overlay to block hover & click interactions */
-.video-overlay {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent; /* Blocks hover actions */
-    z-index: 2;
-    pointer-events: auto;
-}
-
 
 .contained-banner {
     // padding-left: 2rem;
