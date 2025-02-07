@@ -4,6 +4,7 @@
 	$function_file_path = [
 		'/libs/enqueue_styles_scripts.php',
 		'/libs/cpt.php',
+		'/libs/blocks.php',
 		'/libs/core_tweaks.php',
 		'/blocks/function.php'
 	];

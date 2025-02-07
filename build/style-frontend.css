@@ -781,7 +781,7 @@ h4.get-a-quote.has-background {
   cursor: pointer;
 }
 .wp-block-lg-blocks-accordion > .accordion-container .accordion-header.collapsed::after {
-  content: "\f068";
+  content: "+";
 }
 .wp-block-lg-blocks-accordion > .accordion-container .accordion-header h3 {
   font-size: 1.5rem;
@@ -789,7 +789,7 @@ h4.get-a-quote.has-background {
 }
 .wp-block-lg-blocks-accordion > .accordion-container .accordion-header::after {
   font: var(--fa-font-solid);
-  content: "+";
+  content: "\f068";
   font-size: 2rem;
   right: 0;
 }
@@ -806,6 +806,7 @@ h4.get-a-quote.has-background {
 @media (max-width: 1200px) {
   .single.single-gallery .gallery-two-col .wp-block-column:first-child figure img, .single.single-product .gallery-two-col .wp-block-column:first-child figure img {
     height: 360px;
+    object-fit: cover;
   }
 }
 

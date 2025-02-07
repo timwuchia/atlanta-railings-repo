@@ -98,6 +98,22 @@
 
 /***/ }),
 
+/***/ "./src/js/components/theme-blocks.js":
+/*!*******************************************!*\
+  !*** ./src/js/components/theme-blocks.js ***!
+  \*******************************************/
+/***/ (() => {
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".accordion-title").forEach(accordion => {
+    accordion.addEventListener("click", function () {
+      this.parentNode.classList.toggle("active");
+    });
+  });
+});
+
+/***/ }),
+
 /***/ "./src/js/window-event/load.js":
 /*!*************************************!*\
   !*** ./src/js/window-event/load.js ***!
@@ -130,6 +146,10 @@ __webpack_require__.r(__webpack_exports__);
     });
     $('.get-a-quote').click(function () {
       $('.get-quote-form').addClass('show');
+    });
+    $('.wp-block-lg-blocks-accordion-item h3').click(function () {
+      console.log('kkkk');
+      // $('.accordion-collapse').slideUp();
     });
   });
 })(jQuery);
@@ -262,6 +282,7 @@ __webpack_require__(/*! ./window-event/load.js */ "./src/js/window-event/load.js
 __webpack_require__(/*! ./window-event/resize.js */ "./src/js/window-event/resize.js");
 __webpack_require__(/*! ./window-event/scroll.js */ "./src/js/window-event/scroll.js");
 __webpack_require__(/*! ./components/navigation.js */ "./src/js/components/navigation.js");
+__webpack_require__(/*! ./components/theme-blocks.js */ "./src/js/components/theme-blocks.js");
 })();
 
 /******/ })()

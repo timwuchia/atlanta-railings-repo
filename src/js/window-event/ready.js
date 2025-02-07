@@ -7,5 +7,10 @@
 		$('.get-a-quote').click(function(){
 			$('.get-quote-form').addClass('show')
 		})
+
+		$('.wp-block-lg-blocks-accordion-item h3').click(function(){
+			console.log('kkkk')
+			// $('.accordion-collapse').slideUp();
+		})
 	});
 })(jQuery);

@@ -597,7 +597,7 @@ h4.get-a-quote {
             margin-bottom: 0;
             &.collapsed {
                 &::after {
-                    content: "\f068";
+                    content: "\2b";
                 }
             }
             h3 {
@@ -608,7 +608,7 @@ h4.get-a-quote {
             cursor:  pointer;
             &::after {
                 font: var(--fa-font-solid);
-                content: "\2b";
+                content: "\f068";
                 font-size: 2rem;
                 right: 0;
             }
@@ -634,6 +634,7 @@ h4.get-a-quote {
                     img {
                         @media (max-width: $desktop){
                             height: 360px;
+                            object-fit: cover;
                         }
                     }
                 }

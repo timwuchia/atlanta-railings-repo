@@ -1,0 +1,15 @@
+{
+  "apiVersion": 2,
+  "name": "theme-blocks/accordion",
+  "title": "Accordion Custom",
+  "category": "widgets",
+  "icon": "list-view",
+  "description": "A collapsible accordion block.",
+  "supports": {
+      "html": false
+  },
+  "editorScript": "file:./accordion.js"
+  // "editorStyle": "file:./accordion.scss",
+  // "style": "file:./accordion.scss"
+  }
+  
