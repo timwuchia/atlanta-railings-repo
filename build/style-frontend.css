@@ -442,7 +442,6 @@ html body {
   position: relative;
   padding-left: 0;
   padding-right: 0;
-  height: 500px;
 }
 .wp-site-blocks .entry-content .alignfull.video-banner-wrap .video-banner {
   width: 100%;
@@ -465,13 +464,17 @@ html body {
   position: relative;
   z-index: 2;
 }
+.wp-site-blocks .entry-content .alignfull.video-banner-wrap #video-banner-content-wrapper .video-banner-content {
+  padding: 1.5rem;
+  margin-right: unset !important;
+}
 @media screen and (min-width: 768px) {
   .wp-site-blocks .entry-content .alignfull.video-banner-wrap {
     height: 640px;
   }
   .wp-site-blocks .entry-content .alignfull.video-banner-wrap .video-banner {
     position: absolute;
-    height: 100%;
+    height: 640px;
     z-index: 1;
   }
   .wp-site-blocks .entry-content .alignfull.video-banner-wrap #video-banner-content-wrapper {

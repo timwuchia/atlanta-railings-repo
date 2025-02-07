@@ -315,7 +315,6 @@ html {
     @extend %clear-horizontal-spacing;
     padding-left: 0;
     padding-right: 0;
-    height: $height;
     
     .video-banner {
         width: 100%;
@@ -337,12 +336,16 @@ html {
         align-items: center;
         position: relative;
         z-index: 2;
+        .video-banner-content {
+            padding: 1.5rem;
+            margin-right: unset !important
+        }
     }
     @media screen and (min-width: $tabletSmall){
         height: $tabletHeight;
         .video-banner {
             position: absolute;
-            height: 100%;
+            height: $tabletHeight;
             z-index: 1;
         }
         #video-banner-content-wrapper {
