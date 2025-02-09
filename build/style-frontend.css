@@ -755,6 +755,7 @@ h4.get-a-quote.has-background {
 .wp-block-lg-blocks-accordion > .accordion-container .accordion-header h3 {
   font-size: 1.5rem;
   padding-right: 3rem;
+  color: #1C2D72;
 }
 .wp-block-lg-blocks-accordion > .accordion-container .accordion-header::after {
   font: var(--fa-font-solid);
