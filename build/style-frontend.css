@@ -680,7 +680,7 @@ h4.get-a-quote.has-background {
 .swap-order__tablet {
   flex-direction: column;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 782px) {
   .swap-order__tablet {
     flex-direction: row;
   }
