@@ -62,6 +62,14 @@
                 color: $tertiary;
                 transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out, border-radius 0.3s ease-in-out;
                 border-bottom: 1px solid transparent; // Invisible border to prevent layout shift
+                &.wp-block-button__link {
+                    color: $primary;
+                    background-color: $tertiary;
+                    &:hover {
+                        background-color: #fff;
+                        color: $secondary;
+                    }
+                }
                 &:hover {
                     color: #fff; // Change text color to white
                     border-bottom-color: #fff; // Add white underline
@@ -73,7 +81,6 @@
             a {
                 &:not(.has-text-color){
                     color: $tertiary !important;
-                    
                     text-decoration: none;
                     transition: color 0.3s ease;
         
@@ -277,8 +284,7 @@
                     transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
                     border-bottom: 1px solid transparent; // Invisible border to prevent layout shift
                     &:hover {
-                        color: $secondary !important;
-                        background-color: $tertiary !important;
+                        color: $secondary;
                         border-bottom-color: $secondary; // Add white underline
                     }
                 }

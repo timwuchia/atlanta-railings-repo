@@ -1220,6 +1220,14 @@ form .gform_body .gform_fields .gfield_required {
   transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out, border-radius 0.3s ease-in-out;
   border-bottom: 1px solid transparent;
 }
+.site-footer .footer-main > .wp-block-column:not(:first-child) a.wp-block-button__link {
+  color: #1C2D72;
+  background-color: #F5F5F5;
+}
+.site-footer .footer-main > .wp-block-column:not(:first-child) a.wp-block-button__link:hover {
+  background-color: #fff;
+  color: #313131;
+}
 .site-footer .footer-main > .wp-block-column:not(:first-child) a:hover {
   color: #fff;
   border-bottom-color: #fff;
@@ -1386,8 +1394,7 @@ form .gform_body .gform_fields .gfield_required {
   border-bottom: 1px solid transparent;
 }
 .site-footer .footer-legal .footer-longevity p a:hover {
-  color: #313131 !important;
-  background-color: #F5F5F5 !important;
+  color: #313131;
   border-bottom-color: #313131;
 }
 
