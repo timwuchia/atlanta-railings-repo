@@ -277,7 +277,8 @@
                     transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
                     border-bottom: 1px solid transparent; // Invisible border to prevent layout shift
                     &:hover {
-                        color: $secondary;
+                        color: $secondary !important;
+                        background-color: $tertiary !important;
                         border-bottom-color: $secondary; // Add white underline
                     }
                 }
