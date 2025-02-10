@@ -1994,6 +1994,7 @@ nav.main-nav div.wp-block-navigation__responsive-container div.wp-block-navigati
 @media (max-width: 768px) {
   .gform_wrapper form .gform-body .gfield textarea.large {
     height: 5rem;
+    min-block-size: unset;
   }
 }
 .gform_wrapper form .gform-body .gfield_description {
