@@ -1221,12 +1221,12 @@ form .gform_body .gform_fields .gfield_required {
   border-bottom: 1px solid transparent;
 }
 .site-footer .footer-main > .wp-block-column:not(:first-child) a.wp-block-button__link {
-  color: #1C2D72;
-  background-color: #F5F5F5;
+  color: #1C2D72 !important;
+  background-color: #F5F5F5 !important;
 }
 .site-footer .footer-main > .wp-block-column:not(:first-child) a.wp-block-button__link:hover {
-  background-color: #fff;
-  color: #313131;
+  background-color: #fff !important;
+  color: #313131 !important;
 }
 .site-footer .footer-main > .wp-block-column:not(:first-child) a:hover {
   color: #fff;
