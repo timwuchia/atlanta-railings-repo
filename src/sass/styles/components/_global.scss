@@ -414,6 +414,9 @@ body:not(.block-editor-page){
                 width: calc(100% + 50px);
                 height: calc(100% + 50px);
             }
+            .wp-block-heading {
+                color: #fff;
+            }
             &:hover {
                 img {
                     transform: scale(1);

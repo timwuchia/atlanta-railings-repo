@@ -538,6 +538,9 @@ body:not(.block-editor-page) .card-hover img {
     width: calc(100% + 50px);
     height: calc(100% + 50px);
   }
+  body:not(.block-editor-page) .card-hover .wp-block-heading {
+    color: #fff;
+  }
   body:not(.block-editor-page) .card-hover:hover img {
     transform: scale(1);
   }
