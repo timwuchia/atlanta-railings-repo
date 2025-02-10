@@ -421,6 +421,9 @@ body:not(.block-editor-page){
                 img {
                     transform: scale(1);
                 }
+                .wp-block-heading {
+                    color: $secondary;
+                }
                 .card-content {
                     background-color: $tertiary;
                     bottom: 100%;

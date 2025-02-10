@@ -544,6 +544,9 @@ body:not(.block-editor-page) .card-hover img {
   body:not(.block-editor-page) .card-hover:hover img {
     transform: scale(1);
   }
+  body:not(.block-editor-page) .card-hover:hover .wp-block-heading {
+    color: #313131;
+  }
   body:not(.block-editor-page) .card-hover:hover .card-content {
     background-color: #F5F5F5;
     bottom: 100%;
