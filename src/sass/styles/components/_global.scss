@@ -387,6 +387,12 @@ html {
             h2 {
                 text-align: left;
                 padding-right: 0 !important;
+                max-width: 370px !important;
+            }
+        }
+        @media screen and (min-width: $desktop) {
+            h2 {
+                max-width: 450px !important;
             }
         }
     }

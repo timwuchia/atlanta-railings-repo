@@ -514,6 +514,12 @@ html body {
   .contained-banner .wp-block-cover__inner-container h2 {
     text-align: left;
     padding-right: 0 !important;
+    max-width: 370px !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contained-banner .wp-block-cover__inner-container h2 {
+    max-width: 450px !important;
   }
 }
 
