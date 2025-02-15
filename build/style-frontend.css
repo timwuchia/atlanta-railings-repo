@@ -905,9 +905,11 @@ form .gform_body .gform_fields .gfield_required {
   }
 }
 
-#sb-reviews-container-1 .sb-feed-container .sb-more {
-  color: #1C2D72;
+#sb-reviews-container-1 .sb-feed-container .sb-expand-on-click {
   text-decoration: none;
+}
+#sb-reviews-container-1 .sb-feed-container .sb-expand-on-click .sb-more {
+  color: #1C2D72;
 }
 #sb-reviews-container-1 .sb-feed-container .sb-btn {
   border-radius: 40px;

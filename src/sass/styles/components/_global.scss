@@ -832,9 +832,11 @@ form {
 // smash balloon feed style override
 #sb-reviews-container-1 {
     .sb-feed-container {
-        .sb-more {
-            color: $primary;
+        .sb-expand-on-click {
             text-decoration: none;
+            .sb-more {
+                color: $primary;
+            }
         }
         .sb-btn {
             border-radius: 40px;
