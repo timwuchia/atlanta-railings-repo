@@ -853,7 +853,13 @@ form {
             }
         }
         .sbr_carousel .sbr-owl-nav > div {
-            padding: 5px 7px;
+            &.sbr-owl-prev {
+                padding: 5px 8px 5px 6px;
+            }
+            &.sbr-owl-next {
+                padding: 5px 6px 5px 8px;
+            }
+            padding: 5px 6px;
             color: #fff;
             background-color: $primary;
             box-shadow: unset;
@@ -865,6 +871,18 @@ form {
             }
             &:hover {
                 background-color: $secondary;
+            }
+            @media screen and (min-width: $desktop){
+                &.sbr-owl-prev {
+                    padding: 10px 16px 10px 12px;
+                }
+                &.sbr-owl-next {
+                    padding: 10px 12px 10px 16px;
+                }
+                svg {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                }
             }
         }
     }

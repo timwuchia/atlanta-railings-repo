@@ -928,12 +928,18 @@ form .gform_body .gform_fields .gfield_required {
   border-radius: 0;
 }
 #sb-reviews-container-1 .sb-feed-container .sbr_carousel .sbr-owl-nav > div, #sb-reviews-container-2 .sb-feed-container .sbr_carousel .sbr-owl-nav > div {
-  padding: 5px 7px;
+  padding: 5px 6px;
   color: #fff;
   background-color: #1C2D72;
   box-shadow: unset;
   transition: background-color 0.3s ease-in-out;
   display: inline-flex;
+}
+#sb-reviews-container-1 .sb-feed-container .sbr_carousel .sbr-owl-nav > div.sbr-owl-prev, #sb-reviews-container-2 .sb-feed-container .sbr_carousel .sbr-owl-nav > div.sbr-owl-prev {
+  padding: 5px 8px 5px 6px;
+}
+#sb-reviews-container-1 .sb-feed-container .sbr_carousel .sbr-owl-nav > div.sbr-owl-next, #sb-reviews-container-2 .sb-feed-container .sbr_carousel .sbr-owl-nav > div.sbr-owl-next {
+  padding: 5px 6px 5px 8px;
 }
 #sb-reviews-container-1 .sb-feed-container .sbr_carousel .sbr-owl-nav > div svg, #sb-reviews-container-2 .sb-feed-container .sbr_carousel .sbr-owl-nav > div svg {
   width: 1rem;
@@ -941,6 +947,18 @@ form .gform_body .gform_fields .gfield_required {
 }
 #sb-reviews-container-1 .sb-feed-container .sbr_carousel .sbr-owl-nav > div:hover, #sb-reviews-container-2 .sb-feed-container .sbr_carousel .sbr-owl-nav > div:hover {
   background-color: #313131;
+}
+@media screen and (min-width: 1200px) {
+  #sb-reviews-container-1 .sb-feed-container .sbr_carousel .sbr-owl-nav > div.sbr-owl-prev, #sb-reviews-container-2 .sb-feed-container .sbr_carousel .sbr-owl-nav > div.sbr-owl-prev {
+    padding: 10px 16px 10px 12px;
+  }
+  #sb-reviews-container-1 .sb-feed-container .sbr_carousel .sbr-owl-nav > div.sbr-owl-next, #sb-reviews-container-2 .sb-feed-container .sbr_carousel .sbr-owl-nav > div.sbr-owl-next {
+    padding: 10px 12px 10px 16px;
+  }
+  #sb-reviews-container-1 .sb-feed-container .sbr_carousel .sbr-owl-nav > div svg, #sb-reviews-container-2 .sb-feed-container .sbr_carousel .sbr-owl-nav > div svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 
 .wp-site-blocks .wp-block-columns.is-not-stacked-on-mobile > .wp-block-column.header-desktop-contact {
