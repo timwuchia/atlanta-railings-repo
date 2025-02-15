@@ -915,6 +915,9 @@ form .gform_body .gform_fields .gfield_required {
 #sb-reviews-container-1 .sb-feed-container .sb-expand-on-click .sb-more, #sb-reviews-container-2 .sb-feed-container .sb-expand-on-click .sb-more {
   color: #1C2D72;
 }
+#sb-reviews-container-1 .sb-feed-container .sb-post-item-wrap, #sb-reviews-container-2 .sb-feed-container .sb-post-item-wrap {
+  box-shadow: 0px 0px 10px #dbdbdb;
+}
 #sb-reviews-container-1 .sb-feed-container .sb-btn, #sb-reviews-container-2 .sb-feed-container .sb-btn {
   border-radius: 40px;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease-in-out;
@@ -924,13 +927,19 @@ form .gform_body .gform_fields .gfield_required {
   border-color: #313131;
   border-radius: 0;
 }
-#sb-reviews-container-1 .sb-feed-container .sbr-owl-nav > div, #sb-reviews-container-2 .sb-feed-container .sbr-owl-nav > div {
+#sb-reviews-container-1 .sb-feed-container .sbr_carousel .sbr-owl-nav > div, #sb-reviews-container-2 .sb-feed-container .sbr_carousel .sbr-owl-nav > div {
+  padding: 5px 7px;
   color: #fff;
   background-color: #1C2D72;
   box-shadow: unset;
   transition: background-color 0.3s ease-in-out;
+  display: inline-flex;
 }
-#sb-reviews-container-1 .sb-feed-container .sbr-owl-nav > div:hover, #sb-reviews-container-2 .sb-feed-container .sbr-owl-nav > div:hover {
+#sb-reviews-container-1 .sb-feed-container .sbr_carousel .sbr-owl-nav > div svg, #sb-reviews-container-2 .sb-feed-container .sbr_carousel .sbr-owl-nav > div svg {
+  width: 1rem;
+  height: 1rem;
+}
+#sb-reviews-container-1 .sb-feed-container .sbr_carousel .sbr-owl-nav > div:hover, #sb-reviews-container-2 .sb-feed-container .sbr_carousel .sbr-owl-nav > div:hover {
   background-color: #313131;
 }
 
