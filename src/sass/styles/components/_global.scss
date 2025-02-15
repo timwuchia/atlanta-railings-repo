@@ -875,11 +875,11 @@ form {
             @media screen and (min-width: $desktop){
                 &.sbr-owl-prev {
                     padding: 10px 16px 10px 12px;
-                    left: -1rem;
+                    left: -2rem;
                 }
                 &.sbr-owl-next {
                     padding: 10px 12px 10px 16px;
-                    right: -1rem;
+                    right: -2rem;
                 }
                 svg {
                     width: 2.5rem;
