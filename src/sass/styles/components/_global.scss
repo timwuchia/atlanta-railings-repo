@@ -827,3 +827,19 @@ form {
         flex-direction: column;
     }
 }
+
+
+// smash balloon feed style override
+#sb-reviews-container-1 {
+    .sb-feed-container {
+        .sb-btn {
+            border-radius: 40px;
+            transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease-in-out;
+            &:hover {
+                background-color: $secondary;
+                border-color: $secondary;
+                border-radius: 0;
+            }
+        }
+    }
+}

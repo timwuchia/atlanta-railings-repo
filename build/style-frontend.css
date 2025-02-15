@@ -905,6 +905,16 @@ form .gform_body .gform_fields .gfield_required {
   }
 }
 
+#sb-reviews-container-1 .sb-feed-container .sb-btn {
+  border-radius: 40px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease-in-out;
+}
+#sb-reviews-container-1 .sb-feed-container .sb-btn:hover {
+  background-color: #313131;
+  border-color: #313131;
+  border-radius: 0;
+}
+
 .wp-site-blocks .wp-block-columns.is-not-stacked-on-mobile > .wp-block-column.header-desktop-contact {
   flex-basis: unset;
   flex-grow: unset;
