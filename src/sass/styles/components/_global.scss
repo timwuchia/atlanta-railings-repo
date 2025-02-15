@@ -829,7 +829,9 @@ form {
 }
 
 .sbr-feed#sb-reviews-container-2 {
-    max-width: calc(100% - 3rem);
+    @media screen and (min-width: $desktop){
+        max-width: calc(100% - 6rem);
+    }
 }
 // smash balloon feed style override
 #sb-reviews-container-1, #sb-reviews-container-2 {
