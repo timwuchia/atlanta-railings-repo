@@ -860,9 +860,11 @@ form {
         .sbr_carousel .sbr-owl-nav > div {
             &.sbr-owl-prev {
                 padding: 5px 8px 5px 6px;
+                left: -1.25rem;
             }
             &.sbr-owl-next {
                 padding: 5px 6px 5px 8px;
+                right: -1rem;
             }
             padding: 5px 6px;
             color: #fff;

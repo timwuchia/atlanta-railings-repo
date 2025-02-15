@@ -942,9 +942,11 @@ form .gform_body .gform_fields .gfield_required {
 }
 #sb-reviews-container-1 .sb-feed-container .sbr_carousel .sbr-owl-nav > div.sbr-owl-prev, #sb-reviews-container-2 .sb-feed-container .sbr_carousel .sbr-owl-nav > div.sbr-owl-prev {
   padding: 5px 8px 5px 6px;
+  left: -1.25rem;
 }
 #sb-reviews-container-1 .sb-feed-container .sbr_carousel .sbr-owl-nav > div.sbr-owl-next, #sb-reviews-container-2 .sb-feed-container .sbr_carousel .sbr-owl-nav > div.sbr-owl-next {
   padding: 5px 6px 5px 8px;
+  right: -1rem;
 }
 #sb-reviews-container-1 .sb-feed-container .sbr_carousel .sbr-owl-nav > div svg, #sb-reviews-container-2 .sb-feed-container .sbr_carousel .sbr-owl-nav > div svg {
   width: 1rem;
