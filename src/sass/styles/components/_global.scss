@@ -854,6 +854,9 @@ form {
                 border-radius: 0;
             }
         }
+        .sbr_carousel:hover .sbr-owl-nav > div {
+            transform: none;
+        }
         .sbr_carousel .sbr-owl-nav > div {
             &.sbr-owl-prev {
                 padding: 5px 8px 5px 6px;

@@ -929,6 +929,9 @@ form .gform_body .gform_fields .gfield_required {
   border-color: #313131;
   border-radius: 0;
 }
+#sb-reviews-container-1 .sb-feed-container .sbr_carousel:hover .sbr-owl-nav > div, #sb-reviews-container-2 .sb-feed-container .sbr_carousel:hover .sbr-owl-nav > div {
+  transform: none;
+}
 #sb-reviews-container-1 .sb-feed-container .sbr_carousel .sbr-owl-nav > div, #sb-reviews-container-2 .sb-feed-container .sbr_carousel .sbr-owl-nav > div {
   padding: 5px 6px;
   color: #fff;
