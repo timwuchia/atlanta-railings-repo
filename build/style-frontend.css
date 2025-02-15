@@ -905,17 +905,21 @@ form .gform_body .gform_fields .gfield_required {
   }
 }
 
-#sb-reviews-container-1 .sb-feed-container .sb-expand-on-click {
+.sbr-feed#sb-reviews-container-2 {
+  max-width: unset;
+}
+
+#sb-reviews-container-1 .sb-feed-container .sb-expand-on-click, #sb-reviews-container- .sb-feed-container .sb-expand-on-click {
   text-decoration: none;
 }
-#sb-reviews-container-1 .sb-feed-container .sb-expand-on-click .sb-more {
+#sb-reviews-container-1 .sb-feed-container .sb-expand-on-click .sb-more, #sb-reviews-container- .sb-feed-container .sb-expand-on-click .sb-more {
   color: #1C2D72;
 }
-#sb-reviews-container-1 .sb-feed-container .sb-btn {
+#sb-reviews-container-1 .sb-feed-container .sb-btn, #sb-reviews-container- .sb-feed-container .sb-btn {
   border-radius: 40px;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease-in-out;
 }
-#sb-reviews-container-1 .sb-feed-container .sb-btn:hover {
+#sb-reviews-container-1 .sb-feed-container .sb-btn:hover, #sb-reviews-container- .sb-feed-container .sb-btn:hover {
   background-color: #313131;
   border-color: #313131;
   border-radius: 0;

@@ -828,9 +828,11 @@ form {
     }
 }
 
-
+.sbr-feed#sb-reviews-container-2 {
+    max-width: unset;
+}
 // smash balloon feed style override
-#sb-reviews-container-1 {
+#sb-reviews-container-1, #sb-reviews-container- {
     .sb-feed-container {
         .sb-expand-on-click {
             text-decoration: none;
