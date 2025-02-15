@@ -924,6 +924,15 @@ form .gform_body .gform_fields .gfield_required {
   border-color: #313131;
   border-radius: 0;
 }
+#sb-reviews-container-1 .sb-feed-container .sbr-owl-nav > div, #sb-reviews-container- .sb-feed-container .sbr-owl-nav > div {
+  color: #fff;
+  background-color: #1C2D72;
+  box-shadow: unset;
+  transition: background-color 0.3s ease-in-out;
+}
+#sb-reviews-container-1 .sb-feed-container .sbr-owl-nav > div:hover, #sb-reviews-container- .sb-feed-container .sbr-owl-nav > div:hover {
+  background-color: #313131;
+}
 
 .wp-site-blocks .wp-block-columns.is-not-stacked-on-mobile > .wp-block-column.header-desktop-contact {
   flex-basis: unset;

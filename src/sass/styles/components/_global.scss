@@ -849,5 +849,14 @@ form {
                 border-radius: 0;
             }
         }
+        .sbr-owl-nav > div {
+            color: #fff;
+            background-color: $primary;
+            box-shadow: unset;
+            transition: background-color 0.3s ease-in-out;
+            &:hover {
+                background-color: $secondary;
+            }
+        }
     }
 }
