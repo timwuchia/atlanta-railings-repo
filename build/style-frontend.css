@@ -906,7 +906,7 @@ form .gform_body .gform_fields .gfield_required {
 }
 
 .sbr-feed#sb-reviews-container-2 {
-  max-width: unset;
+  max-width: calc(100% - 3rem);
 }
 
 #sb-reviews-container-1 .sb-feed-container .sb-expand-on-click, #sb-reviews-container-2 .sb-feed-container .sb-expand-on-click {
@@ -951,11 +951,11 @@ form .gform_body .gform_fields .gfield_required {
 @media screen and (min-width: 1200px) {
   #sb-reviews-container-1 .sb-feed-container .sbr_carousel .sbr-owl-nav > div.sbr-owl-prev, #sb-reviews-container-2 .sb-feed-container .sbr_carousel .sbr-owl-nav > div.sbr-owl-prev {
     padding: 10px 16px 10px 12px;
-    left: -2rem;
+    left: -3rem;
   }
   #sb-reviews-container-1 .sb-feed-container .sbr_carousel .sbr-owl-nav > div.sbr-owl-next, #sb-reviews-container-2 .sb-feed-container .sbr_carousel .sbr-owl-nav > div.sbr-owl-next {
     padding: 10px 12px 10px 16px;
-    right: -2rem;
+    right: -3rem;
   }
   #sb-reviews-container-1 .sb-feed-container .sbr_carousel .sbr-owl-nav > div svg, #sb-reviews-container-2 .sb-feed-container .sbr_carousel .sbr-owl-nav > div svg {
     width: 2.5rem;
