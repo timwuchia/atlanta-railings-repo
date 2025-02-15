@@ -905,7 +905,7 @@ form .gform_body .gform_fields .gfield_required {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .sbr-feed#sb-reviews-container-2 {
     max-width: calc(100% - 6rem);
   }

@@ -829,7 +829,7 @@ form {
 }
 
 .sbr-feed#sb-reviews-container-2 {
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: $tablet){
         max-width: calc(100% - 6rem);
     }
 }
