@@ -716,7 +716,6 @@ h4.get-a-quote {
     
 }
 
-
 .two-col-breakpoint-reset {
     &__tablet {
         flex-direction: column;
@@ -726,6 +725,13 @@ h4.get-a-quote {
     }
     &__desktop {
         flex-direction: column;
+        .wp-block-column {
+            width: 100%;
+            figure img {
+                width: 100%;
+                max-height: 400px;
+            }
+        }
         @media screen and (min-width: $desktop){
             flex-direction: row;
         }

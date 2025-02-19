@@ -803,6 +803,13 @@ h4.get-a-quote.has-background {
 .two-col-breakpoint-reset__desktop {
   flex-direction: column;
 }
+.two-col-breakpoint-reset__desktop .wp-block-column {
+  width: 100%;
+}
+.two-col-breakpoint-reset__desktop .wp-block-column figure img {
+  width: 100%;
+  max-height: 400px;
+}
 @media screen and (min-width: 1200px) {
   .two-col-breakpoint-reset__desktop {
     flex-direction: row;
