@@ -834,6 +834,10 @@ form {
     }
 }
 
+.reviews-list .sbr-feed {
+    max-width: unset;
+}
+
 .sbr-feed#sb-reviews-container-2 {
     @media screen and (min-width: $tablet){
         max-width: calc(100% - 6rem);
