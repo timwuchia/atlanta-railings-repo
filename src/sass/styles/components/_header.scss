@@ -51,6 +51,27 @@
     }
 }
 
+// specifically handle the header nav text size
+
+.wp-site-blocks .site-header .header-main .nav-column .wp-block-navigation__responsive-container a {
+    @media screen and (min-width: $desktop){
+        font-size: 14px !important;
+    }
+
+    @media screen and (min-width: 1600px){
+        font-size: 1rem !important;
+    }
+}
+
+.wp-site-blocks .site-header .header-main .logo-column .wp-block-image img {
+    @media screen and (min-width: $desktop){
+        width: 11rem;
+    }
+    @media screen and (min-width: 1600px){
+        font-size: 12.625rem;
+    }
+}
+
 @media screen and (min-width: $desktop) {
     .wp-site-blocks {
         .site-header {
@@ -60,7 +81,6 @@
                     flex: 1 1 auto;
                     .wp-block-image {
                         img {
-                            width: 12.625rem;
                             &.shrink-on-scroll {
                                 width: 150px;
                             }

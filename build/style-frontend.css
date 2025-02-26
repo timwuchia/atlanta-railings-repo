@@ -1037,14 +1037,33 @@ form .gform_body .gform_fields .gfield_required {
 }
 
 @media screen and (min-width: 1200px) {
+  .wp-site-blocks .site-header .header-main .nav-column .wp-block-navigation__responsive-container a {
+    font-size: 14px !important;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .wp-site-blocks .site-header .header-main .nav-column .wp-block-navigation__responsive-container a {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wp-site-blocks .site-header .header-main .logo-column .wp-block-image img {
+    width: 11rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .wp-site-blocks .site-header .header-main .logo-column .wp-block-image img {
+    font-size: 12.625rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .wp-site-blocks .site-header .header-main {
     background-color: #fff;
   }
   .wp-site-blocks .site-header .header-main .logo-column {
     flex: 1 1 auto;
-  }
-  .wp-site-blocks .site-header .header-main .logo-column .wp-block-image img {
-    width: 12.625rem;
   }
   .wp-site-blocks .site-header .header-main .logo-column .wp-block-image img.shrink-on-scroll {
     width: 150px;
