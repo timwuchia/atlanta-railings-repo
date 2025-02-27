@@ -720,12 +720,13 @@ h4.get-a-quote {
     }
 }
 
+.gform_confirmation_message {
+    color: #fff;
+}
+
 form {
     background-color: $secondary;
     padding: 1rem;
-    .gform_confirmation_message {
-        color: #fff;
-    }
     .gform_body .gform_fields {
         gap: 1rem;
         .gfield_required {

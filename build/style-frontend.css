@@ -904,12 +904,13 @@ h4.get-a-quote.has-background {
   font-family: "Barlow", serif;
 }
 
+.gform_confirmation_message {
+  color: #fff;
+}
+
 form {
   background-color: #313131;
   padding: 1rem;
-}
-form .gform_confirmation_message {
-  color: #fff;
 }
 form .gform_body .gform_fields {
   gap: 1rem;
